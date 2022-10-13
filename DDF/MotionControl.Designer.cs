@@ -29,7 +29,6 @@ namespace DDF
         /// </summary>
         private void InitializeComponent()
         {
-            this.label15 = new System.Windows.Forms.Label();
             this.comboBox_Emergency = new System.Windows.Forms.ComboBox();
             this.comboBox_YAlarm = new System.Windows.Forms.ComboBox();
             this.comboBox_XAlarm = new System.Windows.Forms.ComboBox();
@@ -45,8 +44,7 @@ namespace DDF
             this.textBox_XStartSpeed = new System.Windows.Forms.TextBox();
             this.textBox_YRatio = new System.Windows.Forms.TextBox();
             this.textBox_XRatio = new System.Windows.Forms.TextBox();
-            this.button_YSetUp = new System.Windows.Forms.Button();
-            this.button_XSetUp = new System.Windows.Forms.Button();
+            this.button_SetUp = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,18 +58,6 @@ namespace DDF
             this.btn_close = new System.Windows.Forms.Button();
             this.button_Open = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label15.Location = new System.Drawing.Point(608, 311);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(105, 30);
-            this.label15.TabIndex = 142;
-            this.label15.Text = "SetUp";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox_Emergency
             // 
@@ -229,29 +215,17 @@ namespace DDF
             this.textBox_XRatio.Text = "0.0000179";
             this.textBox_XRatio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button_YSetUp
+            // button_SetUp
             // 
-            this.button_YSetUp.BackColor = System.Drawing.SystemColors.Info;
-            this.button_YSetUp.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_YSetUp.Location = new System.Drawing.Point(608, 371);
-            this.button_YSetUp.Name = "button_YSetUp";
-            this.button_YSetUp.Size = new System.Drawing.Size(105, 29);
-            this.button_YSetUp.TabIndex = 115;
-            this.button_YSetUp.Text = "Y_SetUp";
-            this.button_YSetUp.UseVisualStyleBackColor = false;
-            this.button_YSetUp.Click += new System.EventHandler(this.button_YSetUp_Click);
-            // 
-            // button_XSetUp
-            // 
-            this.button_XSetUp.BackColor = System.Drawing.SystemColors.Info;
-            this.button_XSetUp.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XSetUp.Location = new System.Drawing.Point(608, 342);
-            this.button_XSetUp.Name = "button_XSetUp";
-            this.button_XSetUp.Size = new System.Drawing.Size(105, 29);
-            this.button_XSetUp.TabIndex = 114;
-            this.button_XSetUp.Text = "X_SetUp";
-            this.button_XSetUp.UseVisualStyleBackColor = false;
-            this.button_XSetUp.Click += new System.EventHandler(this.button_XSetUp_Click);
+            this.button_SetUp.BackColor = System.Drawing.SystemColors.Info;
+            this.button_SetUp.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_SetUp.Location = new System.Drawing.Point(608, 342);
+            this.button_SetUp.Name = "button_SetUp";
+            this.button_SetUp.Size = new System.Drawing.Size(105, 29);
+            this.button_SetUp.TabIndex = 114;
+            this.button_SetUp.Text = "SetUp";
+            this.button_SetUp.UseVisualStyleBackColor = false;
+            this.button_SetUp.Click += new System.EventHandler(this.button_SetUp_Click);
             // 
             // label9
             // 
@@ -399,7 +373,6 @@ namespace DDF
             this.ClientSize = new System.Drawing.Size(1002, 481);
             this.Controls.Add(this.button_Open);
             this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.comboBox_Emergency);
             this.Controls.Add(this.comboBox_YAlarm);
             this.Controls.Add(this.comboBox_XAlarm);
@@ -415,8 +388,7 @@ namespace DDF
             this.Controls.Add(this.textBox_XStartSpeed);
             this.Controls.Add(this.textBox_YRatio);
             this.Controls.Add(this.textBox_XRatio);
-            this.Controls.Add(this.button_YSetUp);
-            this.Controls.Add(this.button_XSetUp);
+            this.Controls.Add(this.button_SetUp);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
@@ -435,7 +407,6 @@ namespace DDF
         }
 
         #endregion
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox_Emergency;
         private System.Windows.Forms.ComboBox comboBox_YAlarm;
         private System.Windows.Forms.ComboBox comboBox_XAlarm;
@@ -451,8 +422,7 @@ namespace DDF
         private System.Windows.Forms.TextBox textBox_XStartSpeed;
         private System.Windows.Forms.TextBox textBox_YRatio;
         private System.Windows.Forms.TextBox textBox_XRatio;
-        private System.Windows.Forms.Button button_YSetUp;
-        private System.Windows.Forms.Button button_XSetUp;
+        private System.Windows.Forms.Button button_SetUp;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;

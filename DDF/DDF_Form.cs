@@ -725,100 +725,50 @@ namespace DDF // 전체가 여기 안에 다 있음
         public static double dyacc;
         public static double dymax;
         public static double dydec;
+        public static int xservo;
+        public static int yservo;
+        public static double xalarm;
+        public static double yalarm;
+        public static double emer;
 
         public void initialize(object sender, EventArgs e)
         {
+            //x축
             PaixMotion.SetUnitPulse(0, 0.0000179);
-            PaixMotion.SetUnitPulse(1, 0.0000358);
+            PaixMotion.ServoOn(0, 1);
             PaixMotion.SetSpeedPPS(0, 1, 6.728, 6.728, 10.417);
             PaixMotion.SetHomeSpeed(0, 10.417, 3.689, -3.091);
+
+            //y축
+            PaixMotion.SetUnitPulse(1, 0.0000358);
+            PaixMotion.ServoOn(1, 1);
             PaixMotion.SetSpeedPPS(1, 1, 10.445, 10.445, 16.667);
             PaixMotion.SetHomeSpeed(1, 16.667, 6.222, -4.223);
-            PaixMotion.ServoOn(0, 1);
-            PaixMotion.ServoOn(1, 1);
         }
 
-        public void XinitialChanged(object sender, EventArgs e)
+        public void initialChanged(object sender, EventArgs e)
         {
+            //x축
+            PaixMotion.SetUnitPulse(0, xRatioChange);
             PaixMotion.SetSpeedPPS(0, dxstart, dxacc, dxdec, dxmax);
             PaixMotion.SetHomeSpeed(0, dxmax, dxmax - dxdec, dxmax - dxdec * 2);
+            PaixMotion.ServoOn(0, xservo);
+            PaixMotion.SetAlarmLogic(0, xalarm == 0 ? (short)0 : (short)1);
+
+            //y축
+            PaixMotion.SetUnitPulse(1, yRatioChange);
+            PaixMotion.SetSpeedPPS(1, dystart, dyacc, dydec, dymax);
+            PaixMotion.SetHomeSpeed(1, dymax, dymax - dydec, dymax - dydec * 2);
+            PaixMotion.ServoOn(1, yservo);
+            PaixMotion.SetAlarmLogic(1, yalarm == 0 ? (short)0 : (short)1);
+
+            PaixMotion.SetEmerLogic(emer == 0 ? (short)0 : (short)1);
+
             Console.WriteLine("메인 폼 값 :" + dxstart);
 
-            MessageBox.Show("X SetUp Complete.");
+            MessageBox.Show("X SetUp Complete.", "Set Up");
         }
 
-        public void YinitialChanged(object sender, EventArgs e)
-        {
-            PaixMotion.SetSpeedPPS(0, dystart, dyacc, dydec, dymax);
-            PaixMotion.SetHomeSpeed(0, dymax, dymax - dydec, dymax - dydec * 2);
-            MessageBox.Show("Y SetUp Complete.");
-        }
-        
-        public void textBox_XRatio_TextChanged(object sender, EventArgs e)
-        {
-            PaixMotion.SetUnitPulse(0, xRatioChange);
-        }
-
-        private void textBox_YRatio_TextChanged(object sender, EventArgs e)
-        {
-            PaixMotion.SetUnitPulse(1, yRatioChange);
-        }
-
-        /*
-        private void comboBox_XServo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            PaixMotion.ServoOn(0, comboBox_XServo.SelectedIndex);
-        }
-
-        private void comboBox_YServo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            PaixMotion.ServoOn(1, comboBox_YServo.SelectedIndex);
-        }
-
-        private void comboBox_XAlarm_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            PaixMotion.SetAlarmLogic(0, comboBox_XAlarm.SelectedIndex == 0 ? (short)0 : (short)1);
-        }
-
-        private void comboBox_YAlarm_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            PaixMotion.SetAlarmLogic(1, comboBox_YAlarm.SelectedIndex == 0 ? (short)0 : (short)1);
-        }
-
-        private void comboBox_Emergency_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            PaixMotion.SetEmerLogic(comboBox_Emergency.SelectedIndex == 0 ? (short)0 : (short)1);
-        }
-
-        private void button_XSetUp_Click(object sender, EventArgs e)
-        {
-            double dstart = Convert.ToDouble(textBox_XStartSpeed.Text);
-            double dacc = Convert.ToDouble(textBox_XAcc.Text);
-            double dmax = Convert.ToDouble(textBox_XMax.Text);
-            double ddec = Convert.ToDouble(textBox_XDec.Text);
-
-            PaixMotion.SetSpeedPPS(0, dstart, dacc, ddec, dmax);
-            PaixMotion.SetHomeSpeed(0, dmax, dmax - ddec, dmax - ddec * 2);
-
-            xsuConfirm xsu = new xsuConfirm();
-            xsu.StartPosition = FormStartPosition.CenterScreen;
-            xsu.Show();
-        }
-
-        private void button_YSetUp_Click(object sender, EventArgs e)
-        {
-            double dstart = Convert.ToDouble(textBox_YStartSpeed.Text);
-            double dacc = Convert.ToDouble(textBox_YAcc.Text);
-            double dmax = Convert.ToDouble(textBox_YMax.Text);
-            double ddec = Convert.ToDouble(textBox_YDec.Text);
-
-            PaixMotion.SetSpeedPPS(1, dstart, dacc, ddec, dmax);
-
-            ysuConfirm ysu = new ysuConfirm();
-            ysu.StartPosition = FormStartPosition.CenterScreen;
-            ysu.Show();
-        }
-        */
         private void button_XJogLeft_MouseDown(object sender, MouseEventArgs e)
         {
             PaixMotion.JogMove(0, 0);

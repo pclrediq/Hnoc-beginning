@@ -94,7 +94,6 @@ namespace DDF
             this.label27 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -442,7 +441,6 @@ namespace DDF
             this.groupBox3.Controls.Add(this.label27);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label11);
@@ -457,25 +455,25 @@ namespace DDF
             this.groupBox3.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.Location = new System.Drawing.Point(31, 553);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1122, 368);
+            this.groupBox3.Size = new System.Drawing.Size(1122, 253);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "MotionControl";
             // 
             // btn_motioncontrol
             // 
-            this.btn_motioncontrol.Location = new System.Drawing.Point(971, 208);
+            this.btn_motioncontrol.Location = new System.Drawing.Point(570, 76);
             this.btn_motioncontrol.Name = "btn_motioncontrol";
-            this.btn_motioncontrol.Size = new System.Drawing.Size(92, 37);
+            this.btn_motioncontrol.Size = new System.Drawing.Size(128, 37);
             this.btn_motioncontrol.TabIndex = 104;
-            this.btn_motioncontrol.Text = "Access";
+            this.btn_motioncontrol.Text = "Control";
             this.btn_motioncontrol.UseVisualStyleBackColor = true;
             this.btn_motioncontrol.Click += new System.EventHandler(this.btn_motioncontrol_Click);
             // 
             // button_XHome
             // 
             this.button_XHome.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XHome.Location = new System.Drawing.Point(492, 296);
+            this.button_XHome.Location = new System.Drawing.Point(288, 173);
             this.button_XHome.Name = "button_XHome";
             this.button_XHome.Size = new System.Drawing.Size(105, 29);
             this.button_XHome.TabIndex = 103;
@@ -488,7 +486,7 @@ namespace DDF
             this.label35.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label35.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label35.Location = new System.Drawing.Point(492, 325);
+            this.label35.Location = new System.Drawing.Point(288, 202);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(105, 30);
             this.label35.TabIndex = 102;
@@ -498,54 +496,54 @@ namespace DDF
             // 
             this.panel_XBusy.BackColor = System.Drawing.Color.DarkGray;
             this.panel_XBusy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XBusy.Location = new System.Drawing.Point(702, 60);
+            this.panel_XBusy.Location = new System.Drawing.Point(426, 60);
             this.panel_XBusy.Name = "panel_XBusy";
-            this.panel_XBusy.Size = new System.Drawing.Size(105, 29);
+            this.panel_XBusy.Size = new System.Drawing.Size(59, 29);
             this.panel_XBusy.TabIndex = 79;
             // 
             // panel_XEncZ
             // 
             this.panel_XEncZ.BackColor = System.Drawing.Color.DarkGray;
             this.panel_XEncZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XEncZ.Location = new System.Drawing.Point(597, 60);
+            this.panel_XEncZ.Location = new System.Drawing.Point(367, 60);
             this.panel_XEncZ.Name = "panel_XEncZ";
-            this.panel_XEncZ.Size = new System.Drawing.Size(105, 29);
+            this.panel_XEncZ.Size = new System.Drawing.Size(59, 29);
             this.panel_XEncZ.TabIndex = 79;
             // 
             // panel_XNear
             // 
             this.panel_XNear.BackColor = System.Drawing.Color.DarkGray;
             this.panel_XNear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XNear.Location = new System.Drawing.Point(492, 60);
+            this.panel_XNear.Location = new System.Drawing.Point(308, 60);
             this.panel_XNear.Name = "panel_XNear";
-            this.panel_XNear.Size = new System.Drawing.Size(105, 29);
+            this.panel_XNear.Size = new System.Drawing.Size(59, 29);
             this.panel_XNear.TabIndex = 79;
             // 
             // panel_XMinusLimit
             // 
             this.panel_XMinusLimit.BackColor = System.Drawing.Color.DarkGray;
             this.panel_XMinusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XMinusLimit.Location = new System.Drawing.Point(387, 60);
+            this.panel_XMinusLimit.Location = new System.Drawing.Point(249, 60);
             this.panel_XMinusLimit.Name = "panel_XMinusLimit";
-            this.panel_XMinusLimit.Size = new System.Drawing.Size(105, 29);
+            this.panel_XMinusLimit.Size = new System.Drawing.Size(59, 29);
             this.panel_XMinusLimit.TabIndex = 79;
             // 
             // panel_XPlusLimit
             // 
             this.panel_XPlusLimit.BackColor = System.Drawing.Color.DarkGray;
             this.panel_XPlusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XPlusLimit.Location = new System.Drawing.Point(282, 60);
+            this.panel_XPlusLimit.Location = new System.Drawing.Point(190, 60);
             this.panel_XPlusLimit.Name = "panel_XPlusLimit";
-            this.panel_XPlusLimit.Size = new System.Drawing.Size(105, 29);
+            this.panel_XPlusLimit.Size = new System.Drawing.Size(59, 29);
             this.panel_XPlusLimit.TabIndex = 79;
             // 
             // panel_XAlarm
             // 
             this.panel_XAlarm.BackColor = System.Drawing.Color.DarkGray;
             this.panel_XAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XAlarm.Location = new System.Drawing.Point(177, 60);
+            this.panel_XAlarm.Location = new System.Drawing.Point(131, 60);
             this.panel_XAlarm.Name = "panel_XAlarm";
-            this.panel_XAlarm.Size = new System.Drawing.Size(105, 29);
+            this.panel_XAlarm.Size = new System.Drawing.Size(59, 29);
             this.panel_XAlarm.TabIndex = 79;
             // 
             // panel_XHomeDone
@@ -554,16 +552,17 @@ namespace DDF
             this.panel_XHomeDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_XHomeDone.Location = new System.Drawing.Point(72, 60);
             this.panel_XHomeDone.Name = "panel_XHomeDone";
-            this.panel_XHomeDone.Size = new System.Drawing.Size(105, 29);
+            this.panel_XHomeDone.Size = new System.Drawing.Size(59, 29);
             this.panel_XHomeDone.TabIndex = 79;
             // 
             // label_YEncVal
             // 
             this.label_YEncVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_YEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_YEncVal.Location = new System.Drawing.Point(177, 325);
+            this.label_YEncVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_YEncVal.Location = new System.Drawing.Point(483, 201);
             this.label_YEncVal.Name = "label_YEncVal";
-            this.label_YEncVal.Size = new System.Drawing.Size(105, 29);
+            this.label_YEncVal.Size = new System.Drawing.Size(91, 29);
             this.label_YEncVal.TabIndex = 101;
             this.label_YEncVal.Text = "0";
             this.label_YEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -572,9 +571,10 @@ namespace DDF
             // 
             this.label_XEncVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_XEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_XEncVal.Location = new System.Drawing.Point(177, 296);
+            this.label_XEncVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_XEncVal.Location = new System.Drawing.Point(483, 172);
             this.label_XEncVal.Name = "label_XEncVal";
-            this.label_XEncVal.Size = new System.Drawing.Size(105, 29);
+            this.label_XEncVal.Size = new System.Drawing.Size(91, 29);
             this.label_XEncVal.TabIndex = 100;
             this.label_XEncVal.Text = "0";
             this.label_XEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -583,9 +583,10 @@ namespace DDF
             // 
             this.label_YCmdVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_YCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_YCmdVal.Location = new System.Drawing.Point(72, 325);
+            this.label_YCmdVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_YCmdVal.Location = new System.Drawing.Point(392, 201);
             this.label_YCmdVal.Name = "label_YCmdVal";
-            this.label_YCmdVal.Size = new System.Drawing.Size(105, 29);
+            this.label_YCmdVal.Size = new System.Drawing.Size(91, 29);
             this.label_YCmdVal.TabIndex = 99;
             this.label_YCmdVal.Text = "0";
             this.label_YCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -595,9 +596,10 @@ namespace DDF
             // 
             this.label_XCmdVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_XCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_XCmdVal.Location = new System.Drawing.Point(72, 296);
+            this.label_XCmdVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_XCmdVal.Location = new System.Drawing.Point(392, 172);
             this.label_XCmdVal.Name = "label_XCmdVal";
-            this.label_XCmdVal.Size = new System.Drawing.Size(105, 29);
+            this.label_XCmdVal.Size = new System.Drawing.Size(91, 29);
             this.label_XCmdVal.TabIndex = 98;
             this.label_XCmdVal.Text = "0";
             this.label_XCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -605,26 +607,25 @@ namespace DDF
             // 
             // textBox_DevNo
             // 
-            this.textBox_DevNo.Location = new System.Drawing.Point(757, 295);
+            this.textBox_DevNo.Location = new System.Drawing.Point(570, 41);
             this.textBox_DevNo.Name = "textBox_DevNo";
-            this.textBox_DevNo.Size = new System.Drawing.Size(70, 29);
+            this.textBox_DevNo.Size = new System.Drawing.Size(36, 29);
             this.textBox_DevNo.TabIndex = 97;
             this.textBox_DevNo.Text = "11";
             this.textBox_DevNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button_Open
             // 
-            this.button_Open.Location = new System.Drawing.Point(832, 295);
+            this.button_Open.Location = new System.Drawing.Point(612, 41);
             this.button_Open.Name = "button_Open";
-            this.button_Open.Size = new System.Drawing.Size(165, 29);
+            this.button_Open.Size = new System.Drawing.Size(86, 29);
             this.button_Open.TabIndex = 96;
             this.button_Open.Text = "Open";
             this.button_Open.UseVisualStyleBackColor = true;
-            //this.button_Open.Click += new System.EventHandler(this.button_Open_Click);
             // 
             // button_YJogRight
             // 
-            this.button_YJogRight.Location = new System.Drawing.Point(334, 325);
+            this.button_YJogRight.Location = new System.Drawing.Point(124, 202);
             this.button_YJogRight.Name = "button_YJogRight";
             this.button_YJogRight.Size = new System.Drawing.Size(53, 29);
             this.button_YJogRight.TabIndex = 95;
@@ -635,7 +636,7 @@ namespace DDF
             // 
             // button_YJogLeft
             // 
-            this.button_YJogLeft.Location = new System.Drawing.Point(282, 325);
+            this.button_YJogLeft.Location = new System.Drawing.Point(72, 202);
             this.button_YJogLeft.Name = "button_YJogLeft";
             this.button_YJogLeft.Size = new System.Drawing.Size(53, 29);
             this.button_YJogLeft.TabIndex = 94;
@@ -648,63 +649,63 @@ namespace DDF
             // 
             this.panel_Emergency.BackColor = System.Drawing.Color.DarkGray;
             this.panel_Emergency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_Emergency.Location = new System.Drawing.Point(807, 60);
+            this.panel_Emergency.Location = new System.Drawing.Point(485, 60);
             this.panel_Emergency.Name = "panel_Emergency";
-            this.panel_Emergency.Size = new System.Drawing.Size(105, 58);
+            this.panel_Emergency.Size = new System.Drawing.Size(59, 58);
             this.panel_Emergency.TabIndex = 93;
             // 
             // panel_YBusy
             // 
             this.panel_YBusy.BackColor = System.Drawing.Color.DarkGray;
             this.panel_YBusy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YBusy.Location = new System.Drawing.Point(702, 89);
+            this.panel_YBusy.Location = new System.Drawing.Point(426, 89);
             this.panel_YBusy.Name = "panel_YBusy";
-            this.panel_YBusy.Size = new System.Drawing.Size(105, 29);
+            this.panel_YBusy.Size = new System.Drawing.Size(59, 29);
             this.panel_YBusy.TabIndex = 92;
             // 
             // panel_YMinusLimit
             // 
             this.panel_YMinusLimit.BackColor = System.Drawing.Color.DarkGray;
             this.panel_YMinusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YMinusLimit.Location = new System.Drawing.Point(387, 89);
+            this.panel_YMinusLimit.Location = new System.Drawing.Point(249, 89);
             this.panel_YMinusLimit.Name = "panel_YMinusLimit";
-            this.panel_YMinusLimit.Size = new System.Drawing.Size(105, 29);
+            this.panel_YMinusLimit.Size = new System.Drawing.Size(59, 29);
             this.panel_YMinusLimit.TabIndex = 86;
             // 
             // panel_YNear
             // 
             this.panel_YNear.BackColor = System.Drawing.Color.DarkGray;
             this.panel_YNear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YNear.Location = new System.Drawing.Point(492, 89);
+            this.panel_YNear.Location = new System.Drawing.Point(308, 89);
             this.panel_YNear.Name = "panel_YNear";
-            this.panel_YNear.Size = new System.Drawing.Size(105, 29);
+            this.panel_YNear.Size = new System.Drawing.Size(59, 29);
             this.panel_YNear.TabIndex = 88;
             // 
             // panel_YAlarm
             // 
             this.panel_YAlarm.BackColor = System.Drawing.Color.DarkGray;
             this.panel_YAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YAlarm.Location = new System.Drawing.Point(177, 89);
+            this.panel_YAlarm.Location = new System.Drawing.Point(131, 89);
             this.panel_YAlarm.Name = "panel_YAlarm";
-            this.panel_YAlarm.Size = new System.Drawing.Size(105, 29);
+            this.panel_YAlarm.Size = new System.Drawing.Size(59, 29);
             this.panel_YAlarm.TabIndex = 82;
             // 
             // panel_YEncZ
             // 
             this.panel_YEncZ.BackColor = System.Drawing.Color.DarkGray;
             this.panel_YEncZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YEncZ.Location = new System.Drawing.Point(597, 89);
+            this.panel_YEncZ.Location = new System.Drawing.Point(367, 89);
             this.panel_YEncZ.Name = "panel_YEncZ";
-            this.panel_YEncZ.Size = new System.Drawing.Size(105, 29);
+            this.panel_YEncZ.Size = new System.Drawing.Size(59, 29);
             this.panel_YEncZ.TabIndex = 90;
             // 
             // panel_YPlusLimit
             // 
             this.panel_YPlusLimit.BackColor = System.Drawing.Color.DarkGray;
             this.panel_YPlusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YPlusLimit.Location = new System.Drawing.Point(282, 89);
+            this.panel_YPlusLimit.Location = new System.Drawing.Point(190, 89);
             this.panel_YPlusLimit.Name = "panel_YPlusLimit";
-            this.panel_YPlusLimit.Size = new System.Drawing.Size(105, 29);
+            this.panel_YPlusLimit.Size = new System.Drawing.Size(59, 29);
             this.panel_YPlusLimit.TabIndex = 84;
             // 
             // panel_YHomeDone
@@ -713,7 +714,7 @@ namespace DDF
             this.panel_YHomeDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_YHomeDone.Location = new System.Drawing.Point(72, 89);
             this.panel_YHomeDone.Name = "panel_YHomeDone";
-            this.panel_YHomeDone.Size = new System.Drawing.Size(105, 29);
+            this.panel_YHomeDone.Size = new System.Drawing.Size(59, 29);
             this.panel_YHomeDone.TabIndex = 80;
             // 
             // label19
@@ -721,9 +722,9 @@ namespace DDF
             this.label19.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label19.Location = new System.Drawing.Point(702, 30);
+            this.label19.Location = new System.Drawing.Point(426, 30);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(105, 30);
+            this.label19.Size = new System.Drawing.Size(59, 30);
             this.label19.TabIndex = 76;
             this.label19.Text = "Busy";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -733,9 +734,9 @@ namespace DDF
             this.label21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label21.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.Location = new System.Drawing.Point(597, 30);
+            this.label21.Location = new System.Drawing.Point(367, 30);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(105, 30);
+            this.label21.Size = new System.Drawing.Size(59, 30);
             this.label21.TabIndex = 75;
             this.label21.Text = "Enc(Z)";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -745,9 +746,9 @@ namespace DDF
             this.label22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label22.Location = new System.Drawing.Point(492, 30);
+            this.label22.Location = new System.Drawing.Point(308, 30);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(105, 30);
+            this.label22.Size = new System.Drawing.Size(59, 30);
             this.label22.TabIndex = 74;
             this.label22.Text = "Near";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -757,9 +758,9 @@ namespace DDF
             this.label23.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label23.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label23.Location = new System.Drawing.Point(387, 30);
+            this.label23.Location = new System.Drawing.Point(249, 30);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(105, 30);
+            this.label23.Size = new System.Drawing.Size(59, 30);
             this.label23.TabIndex = 73;
             this.label23.Text = "- Limit";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -769,9 +770,9 @@ namespace DDF
             this.label24.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label24.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label24.Location = new System.Drawing.Point(807, 30);
+            this.label24.Location = new System.Drawing.Point(485, 30);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(105, 30);
+            this.label24.Size = new System.Drawing.Size(59, 30);
             this.label24.TabIndex = 72;
             this.label24.Text = "Emergency";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -781,9 +782,9 @@ namespace DDF
             this.label25.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label25.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label25.Location = new System.Drawing.Point(282, 30);
+            this.label25.Location = new System.Drawing.Point(190, 30);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(105, 30);
+            this.label25.Size = new System.Drawing.Size(59, 30);
             this.label25.TabIndex = 71;
             this.label25.Text = "+ Limit";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -793,9 +794,9 @@ namespace DDF
             this.label26.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label26.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label26.Location = new System.Drawing.Point(177, 30);
+            this.label26.Location = new System.Drawing.Point(131, 30);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(105, 30);
+            this.label26.Size = new System.Drawing.Size(59, 30);
             this.label26.TabIndex = 70;
             this.label26.Text = "Alarm";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -807,7 +808,7 @@ namespace DDF
             this.label27.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label27.Location = new System.Drawing.Point(72, 30);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(105, 30);
+            this.label27.Size = new System.Drawing.Size(59, 30);
             this.label27.TabIndex = 69;
             this.label27.Text = "Home";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -836,26 +837,14 @@ namespace DDF
             this.label18.Text = "X";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label15.Location = new System.Drawing.Point(597, 265);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(105, 30);
-            this.label15.TabIndex = 66;
-            this.label15.Text = "SetUp";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label12
             // 
             this.label12.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label12.Location = new System.Drawing.Point(177, 266);
+            this.label12.Location = new System.Drawing.Point(483, 142);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 30);
+            this.label12.Size = new System.Drawing.Size(91, 30);
             this.label12.TabIndex = 61;
             this.label12.Text = "Enc";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -865,9 +854,9 @@ namespace DDF
             this.label14.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label14.Location = new System.Drawing.Point(72, 266);
+            this.label14.Location = new System.Drawing.Point(392, 142);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 30);
+            this.label14.Size = new System.Drawing.Size(91, 30);
             this.label14.TabIndex = 60;
             this.label14.Text = "Cmd";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -877,7 +866,7 @@ namespace DDF
             this.label11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(492, 265);
+            this.label11.Location = new System.Drawing.Point(288, 142);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(105, 30);
             this.label11.TabIndex = 36;
@@ -887,7 +876,7 @@ namespace DDF
             // button_YStop
             // 
             this.button_YStop.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_YStop.Location = new System.Drawing.Point(387, 325);
+            this.button_YStop.Location = new System.Drawing.Point(183, 202);
             this.button_YStop.Name = "button_YStop";
             this.button_YStop.Size = new System.Drawing.Size(105, 29);
             this.button_YStop.TabIndex = 35;
@@ -898,7 +887,7 @@ namespace DDF
             // button_XStop
             // 
             this.button_XStop.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XStop.Location = new System.Drawing.Point(387, 296);
+            this.button_XStop.Location = new System.Drawing.Point(183, 173);
             this.button_XStop.Name = "button_XStop";
             this.button_XStop.Size = new System.Drawing.Size(105, 29);
             this.button_XStop.TabIndex = 34;
@@ -908,7 +897,7 @@ namespace DDF
             // 
             // button_XJogRight
             // 
-            this.button_XJogRight.Location = new System.Drawing.Point(334, 296);
+            this.button_XJogRight.Location = new System.Drawing.Point(124, 173);
             this.button_XJogRight.Name = "button_XJogRight";
             this.button_XJogRight.Size = new System.Drawing.Size(53, 29);
             this.button_XJogRight.TabIndex = 33;
@@ -919,7 +908,7 @@ namespace DDF
             // 
             // button_XJogLeft
             // 
-            this.button_XJogLeft.Location = new System.Drawing.Point(282, 296);
+            this.button_XJogLeft.Location = new System.Drawing.Point(72, 173);
             this.button_XJogLeft.Name = "button_XJogLeft";
             this.button_XJogLeft.Size = new System.Drawing.Size(53, 29);
             this.button_XJogLeft.TabIndex = 32;
@@ -931,12 +920,14 @@ namespace DDF
             // checkBox_JogCount
             // 
             this.checkBox_JogCount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.checkBox_JogCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_JogCount.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox_JogCount.Location = new System.Drawing.Point(282, 266);
+            this.checkBox_JogCount.Location = new System.Drawing.Point(72, 142);
             this.checkBox_JogCount.Name = "checkBox_JogCount";
             this.checkBox_JogCount.Size = new System.Drawing.Size(105, 30);
             this.checkBox_JogCount.TabIndex = 31;
             this.checkBox_JogCount.Text = "Jog_Count";
+            this.checkBox_JogCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox_JogCount.UseVisualStyleBackColor = false;
             // 
             // label13
@@ -944,7 +935,7 @@ namespace DDF
             this.label13.BackColor = System.Drawing.SystemColors.Highlight;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.Location = new System.Drawing.Point(22, 325);
+            this.label13.Location = new System.Drawing.Point(22, 202);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 29);
             this.label13.TabIndex = 28;
@@ -956,7 +947,7 @@ namespace DDF
             this.label17.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label17.Location = new System.Drawing.Point(387, 265);
+            this.label17.Location = new System.Drawing.Point(183, 142);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(105, 30);
             this.label17.TabIndex = 24;
@@ -968,7 +959,7 @@ namespace DDF
             this.label20.BackColor = System.Drawing.SystemColors.Highlight;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label20.Location = new System.Drawing.Point(22, 296);
+            this.label20.Location = new System.Drawing.Point(22, 173);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(50, 29);
             this.label20.TabIndex = 21;
@@ -1052,7 +1043,7 @@ namespace DDF
             this.DDF.Font = new System.Drawing.Font("나눔고딕", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.DDF.Location = new System.Drawing.Point(25, 21);
             this.DDF.Name = "DDF";
-            this.DDF.Size = new System.Drawing.Size(197, 36);
+            this.DDF.Size = new System.Drawing.Size(208, 36);
             this.DDF.TabIndex = 4;
             this.DDF.Text = "DDF Control";
             // 
@@ -1071,7 +1062,7 @@ namespace DDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 935);
+            this.ClientSize = new System.Drawing.Size(1184, 811);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -1110,7 +1101,6 @@ namespace DDF
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
