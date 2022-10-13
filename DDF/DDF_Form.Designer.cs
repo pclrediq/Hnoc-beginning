@@ -620,7 +620,7 @@ namespace DDF
             this.button_Open.TabIndex = 96;
             this.button_Open.Text = "Open";
             this.button_Open.UseVisualStyleBackColor = true;
-            this.button_Open.Click += new System.EventHandler(this.button_Open_Click);
+            //this.button_Open.Click += new System.EventHandler(this.button_Open_Click);
             // 
             // button_YJogRight
             // 

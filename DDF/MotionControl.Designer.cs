@@ -29,17 +29,7 @@ namespace DDF
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_XHome = new System.Windows.Forms.Button();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label_YEncVal = new System.Windows.Forms.Label();
-            this.label_XEncVal = new System.Windows.Forms.Label();
-            this.label_YCmdVal = new System.Windows.Forms.Label();
-            this.label_XCmdVal = new System.Windows.Forms.Label();
-            this.button_YJogRight = new System.Windows.Forms.Button();
-            this.button_YJogLeft = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.comboBox_Emergency = new System.Windows.Forms.ComboBox();
             this.comboBox_YAlarm = new System.Windows.Forms.ComboBox();
             this.comboBox_XAlarm = new System.Windows.Forms.ComboBox();
@@ -55,15 +45,6 @@ namespace DDF
             this.textBox_XStartSpeed = new System.Windows.Forms.TextBox();
             this.textBox_YRatio = new System.Windows.Forms.TextBox();
             this.textBox_XRatio = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button_YStop = new System.Windows.Forms.Button();
-            this.button_XStop = new System.Windows.Forms.Button();
-            this.button_XJogRight = new System.Windows.Forms.Button();
-            this.button_XJogLeft = new System.Windows.Forms.Button();
-            this.checkBox_JogCount = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.button_YSetUp = new System.Windows.Forms.Button();
             this.button_XSetUp = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -77,126 +58,20 @@ namespace DDF
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_close = new System.Windows.Forms.Button();
+            this.button_Open = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button_XHome
-            // 
-            this.button_XHome.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XHome.Location = new System.Drawing.Point(503, 323);
-            this.button_XHome.Name = "button_XHome";
-            this.button_XHome.Size = new System.Drawing.Size(105, 29);
-            this.button_XHome.TabIndex = 150;
-            this.button_XHome.Text = "X_HomeMove";
-            this.button_XHome.UseVisualStyleBackColor = true;
-            // 
-            // label35
-            // 
-            this.label35.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label35.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label35.Location = new System.Drawing.Point(503, 352);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(105, 30);
-            this.label35.TabIndex = 149;
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_YEncVal
-            // 
-            this.label_YEncVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_YEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_YEncVal.Location = new System.Drawing.Point(188, 352);
-            this.label_YEncVal.Name = "label_YEncVal";
-            this.label_YEncVal.Size = new System.Drawing.Size(105, 29);
-            this.label_YEncVal.TabIndex = 148;
-            this.label_YEncVal.Text = "0";
-            this.label_YEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_XEncVal
-            // 
-            this.label_XEncVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_XEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_XEncVal.Location = new System.Drawing.Point(188, 323);
-            this.label_XEncVal.Name = "label_XEncVal";
-            this.label_XEncVal.Size = new System.Drawing.Size(105, 29);
-            this.label_XEncVal.TabIndex = 147;
-            this.label_XEncVal.Text = "0";
-            this.label_XEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_YCmdVal
-            // 
-            this.label_YCmdVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_YCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_YCmdVal.Location = new System.Drawing.Point(83, 352);
-            this.label_YCmdVal.Name = "label_YCmdVal";
-            this.label_YCmdVal.Size = new System.Drawing.Size(105, 29);
-            this.label_YCmdVal.TabIndex = 146;
-            this.label_YCmdVal.Text = "0";
-            this.label_YCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_XCmdVal
-            // 
-            this.label_XCmdVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_XCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_XCmdVal.Location = new System.Drawing.Point(83, 323);
-            this.label_XCmdVal.Name = "label_XCmdVal";
-            this.label_XCmdVal.Size = new System.Drawing.Size(105, 29);
-            this.label_XCmdVal.TabIndex = 145;
-            this.label_XCmdVal.Text = "0";
-            this.label_XCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button_YJogRight
-            // 
-            this.button_YJogRight.Location = new System.Drawing.Point(345, 352);
-            this.button_YJogRight.Name = "button_YJogRight";
-            this.button_YJogRight.Size = new System.Drawing.Size(53, 29);
-            this.button_YJogRight.TabIndex = 144;
-            this.button_YJogRight.Text = "→";
-            this.button_YJogRight.UseVisualStyleBackColor = true;
-            // 
-            // button_YJogLeft
-            // 
-            this.button_YJogLeft.Location = new System.Drawing.Point(293, 352);
-            this.button_YJogLeft.Name = "button_YJogLeft";
-            this.button_YJogLeft.Size = new System.Drawing.Size(53, 29);
-            this.button_YJogLeft.TabIndex = 143;
-            this.button_YJogLeft.Text = "←";
-            this.button_YJogLeft.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
             this.label15.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label15.Location = new System.Drawing.Point(608, 292);
+            this.label15.Location = new System.Drawing.Point(608, 311);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(105, 30);
             this.label15.TabIndex = 142;
             this.label15.Text = "SetUp";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label12.Location = new System.Drawing.Point(188, 293);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 30);
-            this.label12.TabIndex = 141;
-            this.label12.Text = "Enc";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label14.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label14.Location = new System.Drawing.Point(83, 293);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 30);
-            this.label14.TabIndex = 140;
-            this.label14.Text = "Cmd";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox_Emergency
             // 
@@ -270,7 +145,7 @@ namespace DDF
             this.textBox_YMax.Name = "textBox_YMax";
             this.textBox_YMax.Size = new System.Drawing.Size(105, 21);
             this.textBox_YMax.TabIndex = 134;
-            this.textBox_YMax.Text = "1000";
+            this.textBox_YMax.Text = "16.667";
             this.textBox_YMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_XMax
@@ -279,7 +154,7 @@ namespace DDF
             this.textBox_XMax.Name = "textBox_XMax";
             this.textBox_XMax.Size = new System.Drawing.Size(105, 21);
             this.textBox_XMax.TabIndex = 133;
-            this.textBox_XMax.Text = "1000";
+            this.textBox_XMax.Text = "10.417";
             this.textBox_XMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_YDec
@@ -288,7 +163,7 @@ namespace DDF
             this.textBox_YDec.Name = "textBox_YDec";
             this.textBox_YDec.Size = new System.Drawing.Size(105, 21);
             this.textBox_YDec.TabIndex = 132;
-            this.textBox_YDec.Text = "1000";
+            this.textBox_YDec.Text = "10.445";
             this.textBox_YDec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_XDec
@@ -297,7 +172,7 @@ namespace DDF
             this.textBox_XDec.Name = "textBox_XDec";
             this.textBox_XDec.Size = new System.Drawing.Size(105, 21);
             this.textBox_XDec.TabIndex = 131;
-            this.textBox_XDec.Text = "1000";
+            this.textBox_XDec.Text = "6.278";
             this.textBox_XDec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_YAcc
@@ -306,7 +181,7 @@ namespace DDF
             this.textBox_YAcc.Name = "textBox_YAcc";
             this.textBox_YAcc.Size = new System.Drawing.Size(105, 21);
             this.textBox_YAcc.TabIndex = 130;
-            this.textBox_YAcc.Text = "1000";
+            this.textBox_YAcc.Text = "10.445";
             this.textBox_YAcc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_XAcc
@@ -315,7 +190,7 @@ namespace DDF
             this.textBox_XAcc.Name = "textBox_XAcc";
             this.textBox_XAcc.Size = new System.Drawing.Size(105, 21);
             this.textBox_XAcc.TabIndex = 129;
-            this.textBox_XAcc.Text = "1000";
+            this.textBox_XAcc.Text = "6.278";
             this.textBox_XAcc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_YStartSpeed
@@ -324,7 +199,7 @@ namespace DDF
             this.textBox_YStartSpeed.Name = "textBox_YStartSpeed";
             this.textBox_YStartSpeed.Size = new System.Drawing.Size(105, 21);
             this.textBox_YStartSpeed.TabIndex = 128;
-            this.textBox_YStartSpeed.Text = "100";
+            this.textBox_YStartSpeed.Text = "1";
             this.textBox_YStartSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_XStartSpeed
@@ -333,7 +208,7 @@ namespace DDF
             this.textBox_XStartSpeed.Name = "textBox_XStartSpeed";
             this.textBox_XStartSpeed.Size = new System.Drawing.Size(105, 21);
             this.textBox_XStartSpeed.TabIndex = 127;
-            this.textBox_XStartSpeed.Text = "100";
+            this.textBox_XStartSpeed.Text = "1";
             this.textBox_XStartSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_YRatio
@@ -342,7 +217,7 @@ namespace DDF
             this.textBox_YRatio.Name = "textBox_YRatio";
             this.textBox_YRatio.Size = new System.Drawing.Size(105, 21);
             this.textBox_YRatio.TabIndex = 126;
-            this.textBox_YRatio.Text = "1";
+            this.textBox_YRatio.Text = "0.0000358";
             this.textBox_YRatio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_XRatio
@@ -351,127 +226,32 @@ namespace DDF
             this.textBox_XRatio.Name = "textBox_XRatio";
             this.textBox_XRatio.Size = new System.Drawing.Size(105, 21);
             this.textBox_XRatio.TabIndex = 125;
-            this.textBox_XRatio.Text = "1";
+            this.textBox_XRatio.Text = "0.0000179";
             this.textBox_XRatio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(503, 292);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 30);
-            this.label11.TabIndex = 124;
-            this.label11.Text = "Home";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button_YStop
-            // 
-            this.button_YStop.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_YStop.Location = new System.Drawing.Point(398, 352);
-            this.button_YStop.Name = "button_YStop";
-            this.button_YStop.Size = new System.Drawing.Size(105, 29);
-            this.button_YStop.TabIndex = 123;
-            this.button_YStop.Text = "Y_Motion Stop";
-            this.button_YStop.UseVisualStyleBackColor = true;
-            // 
-            // button_XStop
-            // 
-            this.button_XStop.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XStop.Location = new System.Drawing.Point(398, 323);
-            this.button_XStop.Name = "button_XStop";
-            this.button_XStop.Size = new System.Drawing.Size(105, 29);
-            this.button_XStop.TabIndex = 122;
-            this.button_XStop.Text = "X_Motion Stop";
-            this.button_XStop.UseVisualStyleBackColor = true;
-            // 
-            // button_XJogRight
-            // 
-            this.button_XJogRight.Location = new System.Drawing.Point(345, 323);
-            this.button_XJogRight.Name = "button_XJogRight";
-            this.button_XJogRight.Size = new System.Drawing.Size(53, 29);
-            this.button_XJogRight.TabIndex = 121;
-            this.button_XJogRight.Text = "→";
-            this.button_XJogRight.UseVisualStyleBackColor = true;
-            // 
-            // button_XJogLeft
-            // 
-            this.button_XJogLeft.Location = new System.Drawing.Point(293, 323);
-            this.button_XJogLeft.Name = "button_XJogLeft";
-            this.button_XJogLeft.Size = new System.Drawing.Size(53, 29);
-            this.button_XJogLeft.TabIndex = 120;
-            this.button_XJogLeft.Text = "←";
-            this.button_XJogLeft.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_JogCount
-            // 
-            this.checkBox_JogCount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.checkBox_JogCount.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox_JogCount.Location = new System.Drawing.Point(293, 293);
-            this.checkBox_JogCount.Name = "checkBox_JogCount";
-            this.checkBox_JogCount.Size = new System.Drawing.Size(105, 30);
-            this.checkBox_JogCount.TabIndex = 119;
-            this.checkBox_JogCount.Text = "Jog_Count";
-            this.checkBox_JogCount.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.Location = new System.Drawing.Point(33, 352);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 29);
-            this.label13.TabIndex = 118;
-            this.label13.Text = "Y";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label17.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label17.Location = new System.Drawing.Point(398, 292);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(105, 30);
-            this.label17.TabIndex = 117;
-            this.label17.Text = "Motion_Stop";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label20.Location = new System.Drawing.Point(33, 323);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(50, 29);
-            this.label20.TabIndex = 116;
-            this.label20.Text = "X";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_YSetUp
             // 
             this.button_YSetUp.BackColor = System.Drawing.SystemColors.Info;
             this.button_YSetUp.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_YSetUp.Location = new System.Drawing.Point(608, 352);
+            this.button_YSetUp.Location = new System.Drawing.Point(608, 371);
             this.button_YSetUp.Name = "button_YSetUp";
             this.button_YSetUp.Size = new System.Drawing.Size(105, 29);
             this.button_YSetUp.TabIndex = 115;
             this.button_YSetUp.Text = "Y_SetUp";
             this.button_YSetUp.UseVisualStyleBackColor = false;
+            this.button_YSetUp.Click += new System.EventHandler(this.button_YSetUp_Click);
             // 
             // button_XSetUp
             // 
             this.button_XSetUp.BackColor = System.Drawing.SystemColors.Info;
             this.button_XSetUp.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XSetUp.Location = new System.Drawing.Point(608, 323);
+            this.button_XSetUp.Location = new System.Drawing.Point(608, 342);
             this.button_XSetUp.Name = "button_XSetUp";
             this.button_XSetUp.Size = new System.Drawing.Size(105, 29);
             this.button_XSetUp.TabIndex = 114;
             this.button_XSetUp.Text = "X_SetUp";
             this.button_XSetUp.UseVisualStyleBackColor = false;
+            this.button_XSetUp.Click += new System.EventHandler(this.button_XSetUp_Click);
             // 
             // label9
             // 
@@ -603,23 +383,23 @@ namespace DDF
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // button_Open
+            // 
+            this.button_Open.Location = new System.Drawing.Point(53, 99);
+            this.button_Open.Name = "button_Open";
+            this.button_Open.Size = new System.Drawing.Size(165, 29);
+            this.button_Open.TabIndex = 152;
+            this.button_Open.Text = "Open";
+            this.button_Open.UseVisualStyleBackColor = true;
+            // 
             // MotionControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 481);
+            this.Controls.Add(this.button_Open);
             this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.button_XHome);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.label_YEncVal);
-            this.Controls.Add(this.label_XEncVal);
-            this.Controls.Add(this.label_YCmdVal);
-            this.Controls.Add(this.label_XCmdVal);
-            this.Controls.Add(this.button_YJogRight);
-            this.Controls.Add(this.button_YJogLeft);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox_Emergency);
             this.Controls.Add(this.comboBox_YAlarm);
             this.Controls.Add(this.comboBox_XAlarm);
@@ -635,15 +415,6 @@ namespace DDF
             this.Controls.Add(this.textBox_XStartSpeed);
             this.Controls.Add(this.textBox_YRatio);
             this.Controls.Add(this.textBox_XRatio);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.button_YStop);
-            this.Controls.Add(this.button_XStop);
-            this.Controls.Add(this.button_XJogRight);
-            this.Controls.Add(this.button_XJogLeft);
-            this.Controls.Add(this.checkBox_JogCount);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.button_YSetUp);
             this.Controls.Add(this.button_XSetUp);
             this.Controls.Add(this.label9);
@@ -664,18 +435,7 @@ namespace DDF
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button_XHome;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label_YEncVal;
-        private System.Windows.Forms.Label label_XEncVal;
-        private System.Windows.Forms.Label label_YCmdVal;
-        private System.Windows.Forms.Label label_XCmdVal;
-        private System.Windows.Forms.Button button_YJogRight;
-        private System.Windows.Forms.Button button_YJogLeft;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboBox_Emergency;
         private System.Windows.Forms.ComboBox comboBox_YAlarm;
         private System.Windows.Forms.ComboBox comboBox_XAlarm;
@@ -691,15 +451,6 @@ namespace DDF
         private System.Windows.Forms.TextBox textBox_XStartSpeed;
         private System.Windows.Forms.TextBox textBox_YRatio;
         private System.Windows.Forms.TextBox textBox_XRatio;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button_YStop;
-        private System.Windows.Forms.Button button_XStop;
-        private System.Windows.Forms.Button button_XJogRight;
-        private System.Windows.Forms.Button button_XJogLeft;
-        private System.Windows.Forms.CheckBox checkBox_JogCount;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button button_YSetUp;
         private System.Windows.Forms.Button button_XSetUp;
         private System.Windows.Forms.Label label9;
@@ -713,5 +464,6 @@ namespace DDF
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Button button_Open;
     }
 }

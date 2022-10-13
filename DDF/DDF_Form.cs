@@ -734,12 +734,16 @@ namespace DDF // 전체가 여기 안에 다 있음
             PaixMotion.SetHomeSpeed(0, 10.417, 3.689, -3.091);
             PaixMotion.SetSpeedPPS(1, 1, 10.445, 10.445, 16.667);
             PaixMotion.SetHomeSpeed(1, 16.667, 6.222, -4.223);
+            PaixMotion.ServoOn(0, 1);
+            PaixMotion.ServoOn(1, 1);
         }
 
         public void XinitialChanged(object sender, EventArgs e)
         {
             PaixMotion.SetSpeedPPS(0, dxstart, dxacc, dxdec, dxmax);
             PaixMotion.SetHomeSpeed(0, dxmax, dxmax - dxdec, dxmax - dxdec * 2);
+            Console.WriteLine("메인 폼 값 :" + dxstart);
+
             MessageBox.Show("X SetUp Complete.");
         }
 
@@ -908,38 +912,7 @@ namespace DDF // 전체가 여기 안에 다 있음
             PaixMotion.SetCmd(1, 0);
         }
 
-        private void button_Open_Click(object sender, EventArgs e)
-        {
-            short devId = Convert.ToInt16(textBox_DevNo.Text);
-
-            if (button_Open.Text == "Open" && PaixMotion.Open(devId))
-            {
-                switch (TdWatchSensor.ThreadState)
-                {
-                    case ThreadState.Stopped:
-                        TdWatchSensor = new Thread(new ThreadStart(watchSensor));
-                        break;
-                    case ThreadState.Unstarted:
-                        break;
-                    default:
-                        TdWatchSensor.Abort();
-                        while (TdWatchSensor.ThreadState != ThreadState.Stopped) { }
-                        break;
-                }
-
-                TdWatchSensor.Start();
-                button_Open.Text = "Close";
-            }
-            else if (button_Open.Text == "Close" && PaixMotion.Close())
-            {
-                TdWatchSensor.Interrupt();
-                TdWatchSensor.Join();
-
-                while (TdWatchSensor.ThreadState != ThreadState.Stopped) { }
-
-                button_Open.Text = "Open";
-            }
-        }
+       
 
         private void button_Connect_Click(object sender, EventArgs e)
         {
@@ -1072,6 +1045,7 @@ namespace DDF // 전체가 여기 안에 다 있음
         {
             MotionControl motioncontrol = new MotionControl();
             motioncontrol.Show();
+            Console.WriteLine("Motion Control 팝업 완료");
         }
     }
 }
