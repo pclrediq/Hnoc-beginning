@@ -874,7 +874,7 @@ namespace DDF
             this.checkBox_JogCount.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox_JogCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_JogCount.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox_JogCount.Location = new System.Drawing.Point(186, 82);
+            this.checkBox_JogCount.Location = new System.Drawing.Point(191, 82);
             this.checkBox_JogCount.Name = "checkBox_JogCount";
             this.checkBox_JogCount.Size = new System.Drawing.Size(18, 17);
             this.checkBox_JogCount.TabIndex = 31;
@@ -970,7 +970,7 @@ namespace DDF
             // btn_close
             // 
             this.btn_close.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_close.Location = new System.Drawing.Point(1038, 469);
+            this.btn_close.Location = new System.Drawing.Point(1038, 463);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(85, 35);
             this.btn_close.TabIndex = 5;
@@ -1078,7 +1078,7 @@ namespace DDF
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(1132, 516);
+            this.ClientSize = new System.Drawing.Size(1151, 516);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.groupBox1);
