@@ -690,25 +690,25 @@ namespace DDF // 전체가 여기 안에 다 있음
             label_XEncVal.Text = NmcData.dEnc[0].ToString();
             label_YEncVal.Text = NmcData.dEnc[1].ToString();
 
-            panel_Emergency.BackColor = NmcData.nEmer[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_XBusy.BackColor = NmcData.nBusy[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_YBusy.BackColor = NmcData.nBusy[1] == 1 ? Color.Red : Color.DarkGray;
+            panel_Emergency.BackColor = NmcData.nEmer[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_XBusy.BackColor = NmcData.nBusy[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_YBusy.BackColor = NmcData.nBusy[1] == 1 ? Color.Red : Color.Gainsboro;
 
-            panel_XNear.BackColor = NmcData.nNear[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_YNear.BackColor = NmcData.nNear[1] == 1 ? Color.Red : Color.DarkGray;
+            panel_XNear.BackColor = NmcData.nNear[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_YNear.BackColor = NmcData.nNear[1] == 1 ? Color.Red : Color.Gainsboro;
 
-            panel_XMinusLimit.BackColor = NmcData.nMLimit[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_YMinusLimit.BackColor = NmcData.nMLimit[1] == 1 ? Color.Red : Color.DarkGray;
+            panel_XMinusLimit.BackColor = NmcData.nMLimit[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_YMinusLimit.BackColor = NmcData.nMLimit[1] == 1 ? Color.Red : Color.Gainsboro;
 
-            panel_XPlusLimit.BackColor = NmcData.nPLimit[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_YPlusLimit.BackColor = NmcData.nPLimit[1] == 1 ? Color.Red : Color.DarkGray;
+            panel_XPlusLimit.BackColor = NmcData.nPLimit[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_YPlusLimit.BackColor = NmcData.nPLimit[1] == 1 ? Color.Red : Color.Gainsboro;
 
-            panel_XAlarm.BackColor = NmcData.nAlarm[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_YAlarm.BackColor = NmcData.nAlarm[1] == 1 ? Color.Red : Color.DarkGray;
+            panel_XAlarm.BackColor = NmcData.nAlarm[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_YAlarm.BackColor = NmcData.nAlarm[1] == 1 ? Color.Red : Color.Gainsboro;
 
 
-            panel_XEncZ.BackColor = NmcData.nEncZ[0] == 1 ? Color.Red : Color.DarkGray;
-            panel_YEncZ.BackColor = NmcData.nEncZ[1] == 1 ? Color.Red : Color.DarkGray;
+            panel_XEncZ.BackColor = NmcData.nEncZ[0] == 1 ? Color.Red : Color.Gainsboro;
+            panel_YEncZ.BackColor = NmcData.nEncZ[1] == 1 ? Color.Red : Color.Gainsboro;
         }
 
         private void stop(short nAxis)
@@ -1002,7 +1002,5 @@ namespace DDF // 전체가 여기 안에 다 있음
             DaqPressure daqpressure = new DaqPressure();
             daqpressure.Show();
         }
-
-        
     }
 }
