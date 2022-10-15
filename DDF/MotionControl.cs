@@ -8,50 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
-using NationalInstruments;
-using NationalInstruments.DAQmx;
 
 namespace DDF
 {
     public partial class MotionControl : Form
     {
         DDF_Form ddF;
-        public string[] NMCDesc = {
-                                "NMC2_220S"
-                                ,"NMC2_420S"
-                                ,"NMC2_620S"
-                                ,"NMC2_820S"
-                                ,"NMC2_220_DIO32"
-                                ,"NMC2_220_DIO64"
-                                ,"NMC2_420_DIO32"
-                                ,"NMC2_420_DIO64"
-                                ,"NMC2_820_DIO32"
-                                ,"NMC2_820_DIO64"
-                                ,"NMC2_DIO32"
-                                ,"NMC2_DIO64"
-                                ,"NMC2_DIO96"
-                                ,"NMC2_DIO128"
-                                ,"NMC2_220"
-                                ,"NMC2_420"
-                                ,"NMC2_620"
-                                ,"NMC2_820"
-                                ,"NMC2_620_DIO32"
-                                ,"NMC2_620_DIO64"
-                                ,null
-                                };
 
-        PaixMotion PaixMotion;
-
-        DDF.NMC2.NMCAXESEXPR NmcData = new DDF.NMC2.NMCAXESEXPR();
-        
         public MotionControl(DDF_Form _DDF)
         {
             InitializeComponent();
-            PaixMotion = new PaixMotion();
             ddF = _DDF;
         }
 
-        public void button_SetUp_Click(object sender, EventArgs e)
+        public void button_SetUp_Click(object sender, EventArgs e) // 조작 변수 변경
         { 
             DDF_Form.xRatioChange = Convert.ToDouble(textBox_XRatio.Text);
             DDF_Form.dxstart = Convert.ToDouble(textBox_XStartSpeed.Text);
@@ -77,7 +47,7 @@ namespace DDF
             //Console.WriteLine("메인 폼으로 복사완료");
         }
 
-        private void btn_close_Click(object sender, EventArgs e)
+        private void btn_close_Click(object sender, EventArgs e) // 모션컨트롤 폼 팝업 종료
         {
             this.Close();
             Console.WriteLine("Motion Control 팝업 종료");
