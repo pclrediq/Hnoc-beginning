@@ -15,6 +15,7 @@ namespace DDF
 {
     public partial class MotionControl : Form
     {
+        DDF_Form ddF;
         public string[] NMCDesc = {
                                 "NMC2_220S"
                                 ,"NMC2_420S"
@@ -40,22 +41,18 @@ namespace DDF
                                 };
 
         PaixMotion PaixMotion;
-        Thread TdWatchSensor;
 
         DDF.NMC2.NMCAXESEXPR NmcData = new DDF.NMC2.NMCAXESEXPR();
-
-        public MotionControl()
+        
+        public MotionControl(DDF_Form _DDF)
         {
             InitializeComponent();
             PaixMotion = new PaixMotion();
-            //TdWatchSensor = new Thread(new ThreadStart(watchSensor));
-
-            //physicalChannelComboBox.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AO, PhysicalChannelAccess.External));
-            //if (physicalChannelComboBox.Items.Count > 0)
-            //    physicalChannelComboBox.SelectedIndex = 0;
+            ddF = _DDF;
         }
+
         public void button_SetUp_Click(object sender, EventArgs e)
-        {
+        { 
             DDF_Form.xRatioChange = Convert.ToDouble(textBox_XRatio.Text);
             DDF_Form.dxstart = Convert.ToDouble(textBox_XStartSpeed.Text);
             DDF_Form.dxacc = Convert.ToDouble(textBox_XAcc.Text);
@@ -74,22 +71,11 @@ namespace DDF
 
             DDF_Form.emer = Convert.ToDouble(comboBox_Emergency.SelectedIndex);
 
-            Console.WriteLine("값 입력 완료" + DDF_Form.xRatioChange); // 복사되는 것 까지 확인완료
+            ddF.initialChanged();
 
-            setupEventHandler.Invoke(null, EventArgs.Empty);
-
-            Console.WriteLine("메인 폼으로 복사완료");
-
+            //Console.WriteLine("값 입력 완료" + DDF_Form.xRatioChange + DDF_Form.dxstart); // 복사되는 것 까지 확인완료
+            //Console.WriteLine("메인 폼으로 복사완료");
         }
-
-        public EventHandler setupEventHandler;
-
-        private void DDF_Form_Load(object sender, EventArgs e)
-        {
-            DDF_Form DDF = new DDF_Form();
-            setupEventHandler += new EventHandler(DDF.initialChanged);
-        }
-        
 
         private void btn_close_Click(object sender, EventArgs e)
         {

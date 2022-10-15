@@ -710,11 +710,35 @@ namespace DDF // 전체가 여기 안에 다 있음
             panel_XEncZ.BackColor = NmcData.nEncZ[0] == 1 ? Color.Red : Color.DarkGray;
             panel_YEncZ.BackColor = NmcData.nEncZ[1] == 1 ? Color.Red : Color.DarkGray;
         }
+
         private void stop(short nAxis)
         {
             PaixMotion.Stop(nAxis);
         }
  
+        private void initialize(object sender, EventArgs e) // 모션 컨트롤 조작 변수 초기화
+        {
+            //x축
+            PaixMotion.SetUnitPulse(0, 0.0000179);
+            PaixMotion.ServoOn(0, 1);
+            PaixMotion.SetSpeedPPS(0, 1, 6.728, 6.728, 10.417);
+            PaixMotion.SetHomeSpeed(0, 10.417, 3.689, -3.091);
+
+            //y축
+            PaixMotion.SetUnitPulse(1, 0.0000358);
+            PaixMotion.ServoOn(1, 1);
+            PaixMotion.SetSpeedPPS(1, 1, 10.445, 10.445, 16.667);
+            PaixMotion.SetHomeSpeed(1, 16.667, 6.222, -4.223);
+        }
+
+        private void btn_motioncontrol_Click(object sender, EventArgs e) // 모션 컨트롤 폼 팝업
+        {
+            MotionControl motioncontrol = new MotionControl(this);
+            motioncontrol.Show();
+            Console.WriteLine("Motion Control 팝업 완료");
+        }
+
+        // 모션 컨트롤 조작 변수 선언
         public static double xRatioChange;
         public static double yRatioChange;
         public static double dxstart;
@@ -731,23 +755,11 @@ namespace DDF // 전체가 여기 안에 다 있음
         public static double yalarm;
         public static double emer;
 
-        public void initialize(object sender, EventArgs e)
+        public void initialChanged() // 모션 컨트롤 폼에서 조작 변수 변경 했을 때
         {
-            //x축
-            PaixMotion.SetUnitPulse(0, 0.0000179);
-            PaixMotion.ServoOn(0, 1);
-            PaixMotion.SetSpeedPPS(0, 1, 6.728, 6.728, 10.417);
-            PaixMotion.SetHomeSpeed(0, 10.417, 3.689, -3.091);
+            Cursor.Current = Cursors.WaitCursor;
+            //Console.WriteLine("메인 폼 값 :" + xRatioChange + dxstart + dxacc);
 
-            //y축
-            PaixMotion.SetUnitPulse(1, 0.0000358);
-            PaixMotion.ServoOn(1, 1);
-            PaixMotion.SetSpeedPPS(1, 1, 10.445, 10.445, 16.667);
-            PaixMotion.SetHomeSpeed(1, 16.667, 6.222, -4.223);
-        }
-
-        public void initialChanged(object sender, EventArgs e)
-        {
             //x축
             PaixMotion.SetUnitPulse(0, xRatioChange);
             PaixMotion.SetSpeedPPS(0, dxstart, dxacc, dxdec, dxmax);
@@ -764,9 +776,9 @@ namespace DDF // 전체가 여기 안에 다 있음
 
             PaixMotion.SetEmerLogic(emer == 0 ? (short)0 : (short)1);
 
-            Console.WriteLine("메인 폼 값 :" + dxstart);
-
-            MessageBox.Show("X SetUp Complete.", "Set Up");
+            //Console.WriteLine("메인 폼 값 :" + xRatioChange + dxstart + dxacc);
+            Cursor.Current = Cursors.Default;
+            MessageBox.Show("SetUp Complete!", "Set Up");
         }
 
         private void button_XJogLeft_MouseDown(object sender, MouseEventArgs e)
@@ -991,11 +1003,6 @@ namespace DDF // 전체가 여기 안에 다 있음
             daqpressure.Show();
         }
 
-        private void btn_motioncontrol_Click(object sender, EventArgs e)
-        {
-            MotionControl motioncontrol = new MotionControl();
-            motioncontrol.Show();
-            Console.WriteLine("Motion Control 팝업 완료");
-        }
+        
     }
 }

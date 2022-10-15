@@ -124,7 +124,7 @@ namespace DDF
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(591, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(582, 471);
@@ -169,7 +169,7 @@ namespace DDF
             this.groupBox4.Controls.Add(this.label33);
             this.groupBox4.Controls.Add(this.label32);
             this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox4.Font = new System.Drawing.Font("나눔고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox4.Location = new System.Drawing.Point(31, 73);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(554, 293);
@@ -245,7 +245,7 @@ namespace DDF
             // 
             this.textBox_Ch4_Goal.Location = new System.Drawing.Point(83, 174);
             this.textBox_Ch4_Goal.Name = "textBox_Ch4_Goal";
-            this.textBox_Ch4_Goal.Size = new System.Drawing.Size(99, 22);
+            this.textBox_Ch4_Goal.Size = new System.Drawing.Size(99, 26);
             this.textBox_Ch4_Goal.TabIndex = 21;
             // 
             // textBox_Ch4_Setted
@@ -253,7 +253,7 @@ namespace DDF
             this.textBox_Ch4_Setted.Location = new System.Drawing.Point(298, 174);
             this.textBox_Ch4_Setted.Name = "textBox_Ch4_Setted";
             this.textBox_Ch4_Setted.ReadOnly = true;
-            this.textBox_Ch4_Setted.Size = new System.Drawing.Size(100, 22);
+            this.textBox_Ch4_Setted.Size = new System.Drawing.Size(100, 26);
             this.textBox_Ch4_Setted.TabIndex = 20;
             // 
             // textBox_Ch4_Current
@@ -261,7 +261,7 @@ namespace DDF
             this.textBox_Ch4_Current.Location = new System.Drawing.Point(426, 174);
             this.textBox_Ch4_Current.Name = "textBox_Ch4_Current";
             this.textBox_Ch4_Current.ReadOnly = true;
-            this.textBox_Ch4_Current.Size = new System.Drawing.Size(109, 22);
+            this.textBox_Ch4_Current.Size = new System.Drawing.Size(109, 26);
             this.textBox_Ch4_Current.TabIndex = 19;
             // 
             // label30
@@ -278,7 +278,7 @@ namespace DDF
             // 
             this.textBox_Ch3_Goal.Location = new System.Drawing.Point(83, 141);
             this.textBox_Ch3_Goal.Name = "textBox_Ch3_Goal";
-            this.textBox_Ch3_Goal.Size = new System.Drawing.Size(99, 22);
+            this.textBox_Ch3_Goal.Size = new System.Drawing.Size(99, 26);
             this.textBox_Ch3_Goal.TabIndex = 17;
             // 
             // textBox_Ch3_Setted
@@ -286,7 +286,7 @@ namespace DDF
             this.textBox_Ch3_Setted.Location = new System.Drawing.Point(298, 141);
             this.textBox_Ch3_Setted.Name = "textBox_Ch3_Setted";
             this.textBox_Ch3_Setted.ReadOnly = true;
-            this.textBox_Ch3_Setted.Size = new System.Drawing.Size(100, 22);
+            this.textBox_Ch3_Setted.Size = new System.Drawing.Size(100, 26);
             this.textBox_Ch3_Setted.TabIndex = 16;
             // 
             // textBox_Ch3_Current
@@ -294,7 +294,7 @@ namespace DDF
             this.textBox_Ch3_Current.Location = new System.Drawing.Point(426, 141);
             this.textBox_Ch3_Current.Name = "textBox_Ch3_Current";
             this.textBox_Ch3_Current.ReadOnly = true;
-            this.textBox_Ch3_Current.Size = new System.Drawing.Size(109, 22);
+            this.textBox_Ch3_Current.Size = new System.Drawing.Size(109, 26);
             this.textBox_Ch3_Current.TabIndex = 15;
             // 
             // label31
@@ -311,7 +311,7 @@ namespace DDF
             // 
             this.textBox_Ch2_Goal.Location = new System.Drawing.Point(83, 110);
             this.textBox_Ch2_Goal.Name = "textBox_Ch2_Goal";
-            this.textBox_Ch2_Goal.Size = new System.Drawing.Size(99, 22);
+            this.textBox_Ch2_Goal.Size = new System.Drawing.Size(99, 26);
             this.textBox_Ch2_Goal.TabIndex = 13;
             // 
             // textBox_Ch2_Setted
@@ -319,7 +319,7 @@ namespace DDF
             this.textBox_Ch2_Setted.Location = new System.Drawing.Point(298, 110);
             this.textBox_Ch2_Setted.Name = "textBox_Ch2_Setted";
             this.textBox_Ch2_Setted.ReadOnly = true;
-            this.textBox_Ch2_Setted.Size = new System.Drawing.Size(100, 22);
+            this.textBox_Ch2_Setted.Size = new System.Drawing.Size(100, 26);
             this.textBox_Ch2_Setted.TabIndex = 12;
             // 
             // textBox_Ch2_Current
@@ -327,7 +327,7 @@ namespace DDF
             this.textBox_Ch2_Current.Location = new System.Drawing.Point(426, 110);
             this.textBox_Ch2_Current.Name = "textBox_Ch2_Current";
             this.textBox_Ch2_Current.ReadOnly = true;
-            this.textBox_Ch2_Current.Size = new System.Drawing.Size(109, 22);
+            this.textBox_Ch2_Current.Size = new System.Drawing.Size(109, 26);
             this.textBox_Ch2_Current.TabIndex = 11;
             // 
             // label29
@@ -344,7 +344,7 @@ namespace DDF
             // 
             this.textBox_Ch1_Goal.Location = new System.Drawing.Point(83, 78);
             this.textBox_Ch1_Goal.Name = "textBox_Ch1_Goal";
-            this.textBox_Ch1_Goal.Size = new System.Drawing.Size(99, 22);
+            this.textBox_Ch1_Goal.Size = new System.Drawing.Size(99, 26);
             this.textBox_Ch1_Goal.TabIndex = 9;
             // 
             // textBox_Ch1_Setted
@@ -352,7 +352,7 @@ namespace DDF
             this.textBox_Ch1_Setted.Location = new System.Drawing.Point(298, 78);
             this.textBox_Ch1_Setted.Name = "textBox_Ch1_Setted";
             this.textBox_Ch1_Setted.ReadOnly = true;
-            this.textBox_Ch1_Setted.Size = new System.Drawing.Size(100, 22);
+            this.textBox_Ch1_Setted.Size = new System.Drawing.Size(100, 26);
             this.textBox_Ch1_Setted.TabIndex = 8;
             // 
             // textBox_Ch1_Current
@@ -360,7 +360,7 @@ namespace DDF
             this.textBox_Ch1_Current.Location = new System.Drawing.Point(426, 77);
             this.textBox_Ch1_Current.Name = "textBox_Ch1_Current";
             this.textBox_Ch1_Current.ReadOnly = true;
-            this.textBox_Ch1_Current.Size = new System.Drawing.Size(109, 22);
+            this.textBox_Ch1_Current.Size = new System.Drawing.Size(109, 26);
             this.textBox_Ch1_Current.TabIndex = 7;
             // 
             // label34
@@ -452,7 +452,7 @@ namespace DDF
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox3.Font = new System.Drawing.Font("나눔고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.Location = new System.Drawing.Point(31, 553);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1122, 253);
@@ -462,18 +462,19 @@ namespace DDF
             // 
             // btn_motioncontrol
             // 
-            this.btn_motioncontrol.Location = new System.Drawing.Point(570, 76);
+            this.btn_motioncontrol.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_motioncontrol.Location = new System.Drawing.Point(959, 143);
             this.btn_motioncontrol.Name = "btn_motioncontrol";
-            this.btn_motioncontrol.Size = new System.Drawing.Size(128, 37);
+            this.btn_motioncontrol.Size = new System.Drawing.Size(153, 32);
             this.btn_motioncontrol.TabIndex = 104;
-            this.btn_motioncontrol.Text = "Control";
+            this.btn_motioncontrol.Text = "Motion Setting";
             this.btn_motioncontrol.UseVisualStyleBackColor = true;
             this.btn_motioncontrol.Click += new System.EventHandler(this.btn_motioncontrol_Click);
             // 
             // button_XHome
             // 
             this.button_XHome.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XHome.Location = new System.Drawing.Point(288, 173);
+            this.button_XHome.Location = new System.Drawing.Point(826, 60);
             this.button_XHome.Name = "button_XHome";
             this.button_XHome.Size = new System.Drawing.Size(105, 29);
             this.button_XHome.TabIndex = 103;
@@ -486,7 +487,7 @@ namespace DDF
             this.label35.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label35.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label35.Location = new System.Drawing.Point(288, 202);
+            this.label35.Location = new System.Drawing.Point(826, 89);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(105, 30);
             this.label35.TabIndex = 102;
@@ -560,7 +561,7 @@ namespace DDF
             this.label_YEncVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_YEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_YEncVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_YEncVal.Location = new System.Drawing.Point(483, 201);
+            this.label_YEncVal.Location = new System.Drawing.Point(1021, 88);
             this.label_YEncVal.Name = "label_YEncVal";
             this.label_YEncVal.Size = new System.Drawing.Size(91, 29);
             this.label_YEncVal.TabIndex = 101;
@@ -572,7 +573,7 @@ namespace DDF
             this.label_XEncVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_XEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_XEncVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_XEncVal.Location = new System.Drawing.Point(483, 172);
+            this.label_XEncVal.Location = new System.Drawing.Point(1021, 59);
             this.label_XEncVal.Name = "label_XEncVal";
             this.label_XEncVal.Size = new System.Drawing.Size(91, 29);
             this.label_XEncVal.TabIndex = 100;
@@ -584,7 +585,7 @@ namespace DDF
             this.label_YCmdVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_YCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_YCmdVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_YCmdVal.Location = new System.Drawing.Point(392, 201);
+            this.label_YCmdVal.Location = new System.Drawing.Point(930, 88);
             this.label_YCmdVal.Name = "label_YCmdVal";
             this.label_YCmdVal.Size = new System.Drawing.Size(91, 29);
             this.label_YCmdVal.TabIndex = 99;
@@ -597,7 +598,7 @@ namespace DDF
             this.label_XCmdVal.BackColor = System.Drawing.SystemColors.Window;
             this.label_XCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_XCmdVal.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_XCmdVal.Location = new System.Drawing.Point(392, 172);
+            this.label_XCmdVal.Location = new System.Drawing.Point(930, 59);
             this.label_XCmdVal.Name = "label_XCmdVal";
             this.label_XCmdVal.Size = new System.Drawing.Size(91, 29);
             this.label_XCmdVal.TabIndex = 98;
@@ -607,25 +608,26 @@ namespace DDF
             // 
             // textBox_DevNo
             // 
-            this.textBox_DevNo.Location = new System.Drawing.Point(570, 41);
+            this.textBox_DevNo.Location = new System.Drawing.Point(793, 143);
+            this.textBox_DevNo.Multiline = true;
             this.textBox_DevNo.Name = "textBox_DevNo";
-            this.textBox_DevNo.Size = new System.Drawing.Size(36, 29);
+            this.textBox_DevNo.Size = new System.Drawing.Size(36, 32);
             this.textBox_DevNo.TabIndex = 97;
             this.textBox_DevNo.Text = "11";
             this.textBox_DevNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button_Open
             // 
-            this.button_Open.Location = new System.Drawing.Point(612, 41);
+            this.button_Open.Location = new System.Drawing.Point(835, 143);
             this.button_Open.Name = "button_Open";
-            this.button_Open.Size = new System.Drawing.Size(86, 29);
+            this.button_Open.Size = new System.Drawing.Size(86, 32);
             this.button_Open.TabIndex = 96;
             this.button_Open.Text = "Open";
             this.button_Open.UseVisualStyleBackColor = true;
             // 
             // button_YJogRight
             // 
-            this.button_YJogRight.Location = new System.Drawing.Point(124, 202);
+            this.button_YJogRight.Location = new System.Drawing.Point(662, 89);
             this.button_YJogRight.Name = "button_YJogRight";
             this.button_YJogRight.Size = new System.Drawing.Size(53, 29);
             this.button_YJogRight.TabIndex = 95;
@@ -636,7 +638,7 @@ namespace DDF
             // 
             // button_YJogLeft
             // 
-            this.button_YJogLeft.Location = new System.Drawing.Point(72, 202);
+            this.button_YJogLeft.Location = new System.Drawing.Point(610, 89);
             this.button_YJogLeft.Name = "button_YJogLeft";
             this.button_YJogLeft.Size = new System.Drawing.Size(53, 29);
             this.button_YJogLeft.TabIndex = 94;
@@ -842,7 +844,7 @@ namespace DDF
             this.label12.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label12.Location = new System.Drawing.Point(483, 142);
+            this.label12.Location = new System.Drawing.Point(1021, 29);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(91, 30);
             this.label12.TabIndex = 61;
@@ -854,7 +856,7 @@ namespace DDF
             this.label14.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label14.Location = new System.Drawing.Point(392, 142);
+            this.label14.Location = new System.Drawing.Point(930, 29);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(91, 30);
             this.label14.TabIndex = 60;
@@ -866,7 +868,7 @@ namespace DDF
             this.label11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(288, 142);
+            this.label11.Location = new System.Drawing.Point(826, 29);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(105, 30);
             this.label11.TabIndex = 36;
@@ -876,7 +878,7 @@ namespace DDF
             // button_YStop
             // 
             this.button_YStop.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_YStop.Location = new System.Drawing.Point(183, 202);
+            this.button_YStop.Location = new System.Drawing.Point(721, 89);
             this.button_YStop.Name = "button_YStop";
             this.button_YStop.Size = new System.Drawing.Size(105, 29);
             this.button_YStop.TabIndex = 35;
@@ -887,7 +889,7 @@ namespace DDF
             // button_XStop
             // 
             this.button_XStop.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_XStop.Location = new System.Drawing.Point(183, 173);
+            this.button_XStop.Location = new System.Drawing.Point(721, 60);
             this.button_XStop.Name = "button_XStop";
             this.button_XStop.Size = new System.Drawing.Size(105, 29);
             this.button_XStop.TabIndex = 34;
@@ -897,7 +899,7 @@ namespace DDF
             // 
             // button_XJogRight
             // 
-            this.button_XJogRight.Location = new System.Drawing.Point(124, 173);
+            this.button_XJogRight.Location = new System.Drawing.Point(662, 60);
             this.button_XJogRight.Name = "button_XJogRight";
             this.button_XJogRight.Size = new System.Drawing.Size(53, 29);
             this.button_XJogRight.TabIndex = 33;
@@ -908,7 +910,7 @@ namespace DDF
             // 
             // button_XJogLeft
             // 
-            this.button_XJogLeft.Location = new System.Drawing.Point(72, 173);
+            this.button_XJogLeft.Location = new System.Drawing.Point(610, 60);
             this.button_XJogLeft.Name = "button_XJogLeft";
             this.button_XJogLeft.Size = new System.Drawing.Size(53, 29);
             this.button_XJogLeft.TabIndex = 32;
@@ -922,7 +924,7 @@ namespace DDF
             this.checkBox_JogCount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.checkBox_JogCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_JogCount.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox_JogCount.Location = new System.Drawing.Point(72, 142);
+            this.checkBox_JogCount.Location = new System.Drawing.Point(610, 29);
             this.checkBox_JogCount.Name = "checkBox_JogCount";
             this.checkBox_JogCount.Size = new System.Drawing.Size(105, 30);
             this.checkBox_JogCount.TabIndex = 31;
@@ -935,7 +937,7 @@ namespace DDF
             this.label13.BackColor = System.Drawing.SystemColors.Highlight;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.Location = new System.Drawing.Point(22, 202);
+            this.label13.Location = new System.Drawing.Point(560, 89);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 29);
             this.label13.TabIndex = 28;
@@ -947,7 +949,7 @@ namespace DDF
             this.label17.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label17.Location = new System.Drawing.Point(183, 142);
+            this.label17.Location = new System.Drawing.Point(721, 29);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(105, 30);
             this.label17.TabIndex = 24;
@@ -959,7 +961,7 @@ namespace DDF
             this.label20.BackColor = System.Drawing.SystemColors.Highlight;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label20.Location = new System.Drawing.Point(22, 173);
+            this.label20.Location = new System.Drawing.Point(560, 60);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(50, 29);
             this.label20.TabIndex = 21;
@@ -974,7 +976,7 @@ namespace DDF
             this.groupBox5.Controls.Add(this.textBox1);
             this.groupBox5.Controls.Add(this.button_Analog);
             this.groupBox5.Controls.Add(this.button_Daq);
-            this.groupBox5.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox5.Font = new System.Drawing.Font("나눔고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox5.Location = new System.Drawing.Point(31, 372);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(554, 175);
@@ -996,7 +998,7 @@ namespace DDF
             // 
             this.physicalChannelComboBox.Location = new System.Drawing.Point(19, 41);
             this.physicalChannelComboBox.Name = "physicalChannelComboBox";
-            this.physicalChannelComboBox.Size = new System.Drawing.Size(183, 29);
+            this.physicalChannelComboBox.Size = new System.Drawing.Size(183, 32);
             this.physicalChannelComboBox.TabIndex = 1;
             this.physicalChannelComboBox.Text = "Dev1/ao0";
             // 
@@ -1040,16 +1042,16 @@ namespace DDF
             // DDF
             // 
             this.DDF.AutoSize = true;
-            this.DDF.Font = new System.Drawing.Font("나눔고딕", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.DDF.Font = new System.Drawing.Font("맑은 고딕", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.DDF.Location = new System.Drawing.Point(25, 21);
             this.DDF.Name = "DDF";
-            this.DDF.Size = new System.Drawing.Size(208, 36);
+            this.DDF.Size = new System.Drawing.Size(209, 45);
             this.DDF.TabIndex = 4;
             this.DDF.Text = "DDF Control";
             // 
             // btn_close
             // 
-            this.btn_close.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_close.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_close.Location = new System.Drawing.Point(1068, 512);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(85, 35);
@@ -1062,6 +1064,7 @@ namespace DDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1184, 811);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.groupBox1);
