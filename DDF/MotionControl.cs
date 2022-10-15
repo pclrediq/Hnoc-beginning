@@ -28,7 +28,6 @@ namespace DDF
             DDF_Form.dxacc = Convert.ToDouble(textBox_XAcc.Text);
             DDF_Form.dxmax = Convert.ToDouble(textBox_XMax.Text);
             DDF_Form.dxdec = Convert.ToDouble(textBox_XDec.Text);
-            DDF_Form.xservo = Convert.ToInt32(comboBox_XServo.SelectedIndex);
             DDF_Form.xalarm = Convert.ToDouble(comboBox_XAlarm.SelectedIndex);
 
             DDF_Form.yRatioChange = Convert.ToDouble(textBox_YRatio.Text);
@@ -36,7 +35,6 @@ namespace DDF
             DDF_Form.dyacc = Convert.ToDouble(textBox_YAcc.Text);
             DDF_Form.dymax = Convert.ToDouble(textBox_YMax.Text);
             DDF_Form.dydec = Convert.ToDouble(textBox_YDec.Text);
-            DDF_Form.yservo = Convert.ToInt32(comboBox_YServo.SelectedIndex);
             DDF_Form.yalarm = Convert.ToDouble(comboBox_YAlarm.SelectedIndex);
 
             DDF_Form.emer = Convert.ToDouble(comboBox_Emergency.SelectedIndex);

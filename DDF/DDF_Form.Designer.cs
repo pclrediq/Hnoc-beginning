@@ -58,41 +58,21 @@ namespace DDF
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_motioncontrol = new System.Windows.Forms.Button();
             this.button_XHome = new System.Windows.Forms.Button();
-            this.panel_XBusy = new System.Windows.Forms.Panel();
-            this.panel_XEncZ = new System.Windows.Forms.Panel();
-            this.panel_XNear = new System.Windows.Forms.Panel();
-            this.panel_XMinusLimit = new System.Windows.Forms.Panel();
-            this.panel_XPlusLimit = new System.Windows.Forms.Panel();
-            this.panel_XAlarm = new System.Windows.Forms.Panel();
-            this.panel_XHomeDone = new System.Windows.Forms.Panel();
+            this.textBox_DevNo = new System.Windows.Forms.TextBox();
+            this.button_Open = new System.Windows.Forms.Button();
             this.label_YEncVal = new System.Windows.Forms.Label();
             this.label_XEncVal = new System.Windows.Forms.Label();
             this.label_YCmdVal = new System.Windows.Forms.Label();
             this.label_XCmdVal = new System.Windows.Forms.Label();
-            this.textBox_DevNo = new System.Windows.Forms.TextBox();
-            this.button_Open = new System.Windows.Forms.Button();
             this.button_YJogRight = new System.Windows.Forms.Button();
             this.button_YJogLeft = new System.Windows.Forms.Button();
-            this.panel_Emergency = new System.Windows.Forms.Panel();
-            this.panel_YBusy = new System.Windows.Forms.Panel();
-            this.panel_YMinusLimit = new System.Windows.Forms.Panel();
-            this.panel_YNear = new System.Windows.Forms.Panel();
-            this.panel_YAlarm = new System.Windows.Forms.Panel();
-            this.panel_YEncZ = new System.Windows.Forms.Panel();
-            this.panel_YPlusLimit = new System.Windows.Forms.Panel();
-            this.panel_YHomeDone = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.button_YStop = new System.Windows.Forms.Button();
             this.button_XStop = new System.Windows.Forms.Button();
             this.button_XJogRight = new System.Windows.Forms.Button();
@@ -107,19 +87,40 @@ namespace DDF
             this.button_Daq = new System.Windows.Forms.Button();
             this.DDF = new System.Windows.Forms.Label();
             this.btn_close = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox_YServo = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox_XServo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.panel_XBusy = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.panel_XEncZ = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel_XNear = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel_XMinusLimit = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel_XPlusLimit = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel_XAlarm = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.panel_XHomeDone = new System.Windows.Forms.Panel();
+            this.panel_YHomeDone = new System.Windows.Forms.Panel();
+            this.panel_YPlusLimit = new System.Windows.Forms.Panel();
+            this.panel_YEncZ = new System.Windows.Forms.Panel();
+            this.panel_YAlarm = new System.Windows.Forms.Panel();
+            this.panel_YNear = new System.Windows.Forms.Panel();
+            this.panel_YMinusLimit = new System.Windows.Forms.Panel();
+            this.panel_YBusy = new System.Windows.Forms.Panel();
+            this.panel_Emergency = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -422,6 +423,35 @@ namespace DDF
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.panel_XBusy);
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.panel_XEncZ);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Controls.Add(this.panel_XNear);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.panel_XMinusLimit);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.panel_XPlusLimit);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.panel_XAlarm);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.panel_XHomeDone);
+            this.groupBox3.Controls.Add(this.panel_YHomeDone);
+            this.groupBox3.Controls.Add(this.panel_YPlusLimit);
+            this.groupBox3.Controls.Add(this.panel_YEncZ);
+            this.groupBox3.Controls.Add(this.panel_YAlarm);
+            this.groupBox3.Controls.Add(this.panel_YNear);
+            this.groupBox3.Controls.Add(this.panel_YMinusLimit);
+            this.groupBox3.Controls.Add(this.panel_YBusy);
+            this.groupBox3.Controls.Add(this.panel_Emergency);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.comboBox_XServo);
+            this.groupBox3.Controls.Add(this.comboBox_YServo);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label2);
@@ -445,10 +475,60 @@ namespace DDF
             this.groupBox3.Font = new System.Drawing.Font("나눔고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.Location = new System.Drawing.Point(591, 71);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(532, 252);
+            this.groupBox3.Size = new System.Drawing.Size(532, 377);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Motion Control";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(34, 199);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 17);
+            this.label4.TabIndex = 109;
+            this.label4.Text = "Enc";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(32, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 17);
+            this.label3.TabIndex = 108;
+            this.label3.Text = "Cmd";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(216, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 29);
+            this.label2.TabIndex = 107;
+            this.label2.Text = "Screw";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(77, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 29);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "Piston";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(216, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 29);
+            this.button1.TabIndex = 105;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btn_motioncontrol
             // 
@@ -472,119 +552,6 @@ namespace DDF
             this.button_XHome.UseVisualStyleBackColor = true;
             this.button_XHome.Click += new System.EventHandler(this.button_XHome_Click);
             // 
-            // panel_XBusy
-            // 
-            this.panel_XBusy.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XBusy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XBusy.Location = new System.Drawing.Point(398, 47);
-            this.panel_XBusy.Name = "panel_XBusy";
-            this.panel_XBusy.Size = new System.Drawing.Size(54, 29);
-            this.panel_XBusy.TabIndex = 79;
-            // 
-            // panel_XEncZ
-            // 
-            this.panel_XEncZ.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XEncZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XEncZ.Location = new System.Drawing.Point(344, 47);
-            this.panel_XEncZ.Name = "panel_XEncZ";
-            this.panel_XEncZ.Size = new System.Drawing.Size(54, 29);
-            this.panel_XEncZ.TabIndex = 79;
-            // 
-            // panel_XNear
-            // 
-            this.panel_XNear.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XNear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XNear.Location = new System.Drawing.Point(290, 47);
-            this.panel_XNear.Name = "panel_XNear";
-            this.panel_XNear.Size = new System.Drawing.Size(54, 29);
-            this.panel_XNear.TabIndex = 79;
-            // 
-            // panel_XMinusLimit
-            // 
-            this.panel_XMinusLimit.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XMinusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XMinusLimit.Location = new System.Drawing.Point(236, 47);
-            this.panel_XMinusLimit.Name = "panel_XMinusLimit";
-            this.panel_XMinusLimit.Size = new System.Drawing.Size(54, 29);
-            this.panel_XMinusLimit.TabIndex = 79;
-            // 
-            // panel_XPlusLimit
-            // 
-            this.panel_XPlusLimit.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XPlusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XPlusLimit.Location = new System.Drawing.Point(182, 47);
-            this.panel_XPlusLimit.Name = "panel_XPlusLimit";
-            this.panel_XPlusLimit.Size = new System.Drawing.Size(54, 29);
-            this.panel_XPlusLimit.TabIndex = 79;
-            // 
-            // panel_XAlarm
-            // 
-            this.panel_XAlarm.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XAlarm.Location = new System.Drawing.Point(128, 47);
-            this.panel_XAlarm.Name = "panel_XAlarm";
-            this.panel_XAlarm.Size = new System.Drawing.Size(54, 29);
-            this.panel_XAlarm.TabIndex = 79;
-            // 
-            // panel_XHomeDone
-            // 
-            this.panel_XHomeDone.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_XHomeDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_XHomeDone.Location = new System.Drawing.Point(74, 47);
-            this.panel_XHomeDone.Name = "panel_XHomeDone";
-            this.panel_XHomeDone.Size = new System.Drawing.Size(54, 29);
-            this.panel_XHomeDone.TabIndex = 79;
-            // 
-            // label_YEncVal
-            // 
-            this.label_YEncVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_YEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_YEncVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_YEncVal.Location = new System.Drawing.Point(216, 202);
-            this.label_YEncVal.Name = "label_YEncVal";
-            this.label_YEncVal.Size = new System.Drawing.Size(105, 29);
-            this.label_YEncVal.TabIndex = 101;
-            this.label_YEncVal.Text = "0";
-            this.label_YEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_XEncVal
-            // 
-            this.label_XEncVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_XEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_XEncVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_XEncVal.Location = new System.Drawing.Point(77, 202);
-            this.label_XEncVal.Name = "label_XEncVal";
-            this.label_XEncVal.Size = new System.Drawing.Size(105, 29);
-            this.label_XEncVal.TabIndex = 100;
-            this.label_XEncVal.Text = "0";
-            this.label_XEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_YCmdVal
-            // 
-            this.label_YCmdVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_YCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_YCmdVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_YCmdVal.Location = new System.Drawing.Point(216, 173);
-            this.label_YCmdVal.Name = "label_YCmdVal";
-            this.label_YCmdVal.Size = new System.Drawing.Size(105, 29);
-            this.label_YCmdVal.TabIndex = 99;
-            this.label_YCmdVal.Text = "0";
-            this.label_YCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_YCmdVal.Click += new System.EventHandler(this.label_YCmdVal_Click);
-            // 
-            // label_XCmdVal
-            // 
-            this.label_XCmdVal.BackColor = System.Drawing.SystemColors.Window;
-            this.label_XCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_XCmdVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_XCmdVal.Location = new System.Drawing.Point(77, 173);
-            this.label_XCmdVal.Name = "label_XCmdVal";
-            this.label_XCmdVal.Size = new System.Drawing.Size(105, 29);
-            this.label_XCmdVal.TabIndex = 98;
-            this.label_XCmdVal.Text = "0";
-            this.label_XCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_XCmdVal.Click += new System.EventHandler(this.label_XCmdVal_Click);
-            // 
             // textBox_DevNo
             // 
             this.textBox_DevNo.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -605,6 +572,56 @@ namespace DDF
             this.button_Open.TabIndex = 96;
             this.button_Open.Text = "Open";
             this.button_Open.UseVisualStyleBackColor = true;
+            // 
+            // label_YEncVal
+            // 
+            this.label_YEncVal.BackColor = System.Drawing.SystemColors.Window;
+            this.label_YEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_YEncVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_YEncVal.Location = new System.Drawing.Point(216, 193);
+            this.label_YEncVal.Name = "label_YEncVal";
+            this.label_YEncVal.Size = new System.Drawing.Size(105, 29);
+            this.label_YEncVal.TabIndex = 101;
+            this.label_YEncVal.Text = "0";
+            this.label_YEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_XEncVal
+            // 
+            this.label_XEncVal.BackColor = System.Drawing.SystemColors.Window;
+            this.label_XEncVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_XEncVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_XEncVal.Location = new System.Drawing.Point(77, 193);
+            this.label_XEncVal.Name = "label_XEncVal";
+            this.label_XEncVal.Size = new System.Drawing.Size(105, 29);
+            this.label_XEncVal.TabIndex = 100;
+            this.label_XEncVal.Text = "0";
+            this.label_XEncVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_YCmdVal
+            // 
+            this.label_YCmdVal.BackColor = System.Drawing.SystemColors.Window;
+            this.label_YCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_YCmdVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_YCmdVal.Location = new System.Drawing.Point(216, 164);
+            this.label_YCmdVal.Name = "label_YCmdVal";
+            this.label_YCmdVal.Size = new System.Drawing.Size(105, 29);
+            this.label_YCmdVal.TabIndex = 99;
+            this.label_YCmdVal.Text = "0";
+            this.label_YCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_YCmdVal.Click += new System.EventHandler(this.label_YCmdVal_Click);
+            // 
+            // label_XCmdVal
+            // 
+            this.label_XCmdVal.BackColor = System.Drawing.SystemColors.Window;
+            this.label_XCmdVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_XCmdVal.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_XCmdVal.Location = new System.Drawing.Point(77, 164);
+            this.label_XCmdVal.Name = "label_XCmdVal";
+            this.label_XCmdVal.Size = new System.Drawing.Size(105, 29);
+            this.label_XCmdVal.TabIndex = 98;
+            this.label_XCmdVal.Text = "0";
+            this.label_XCmdVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_XCmdVal.Click += new System.EventHandler(this.label_XCmdVal_Click);
             // 
             // button_YJogRight
             // 
@@ -629,198 +646,6 @@ namespace DDF
             this.button_YJogLeft.UseVisualStyleBackColor = true;
             this.button_YJogLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_YJogLeft_MouseDown);
             this.button_YJogLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_YJogLeft_MouseUp);
-            // 
-            // panel_Emergency
-            // 
-            this.panel_Emergency.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_Emergency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_Emergency.Location = new System.Drawing.Point(452, 47);
-            this.panel_Emergency.Name = "panel_Emergency";
-            this.panel_Emergency.Size = new System.Drawing.Size(68, 58);
-            this.panel_Emergency.TabIndex = 93;
-            // 
-            // panel_YBusy
-            // 
-            this.panel_YBusy.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YBusy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YBusy.Location = new System.Drawing.Point(398, 76);
-            this.panel_YBusy.Name = "panel_YBusy";
-            this.panel_YBusy.Size = new System.Drawing.Size(54, 29);
-            this.panel_YBusy.TabIndex = 92;
-            // 
-            // panel_YMinusLimit
-            // 
-            this.panel_YMinusLimit.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YMinusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YMinusLimit.Location = new System.Drawing.Point(236, 76);
-            this.panel_YMinusLimit.Name = "panel_YMinusLimit";
-            this.panel_YMinusLimit.Size = new System.Drawing.Size(54, 29);
-            this.panel_YMinusLimit.TabIndex = 86;
-            // 
-            // panel_YNear
-            // 
-            this.panel_YNear.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YNear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YNear.Location = new System.Drawing.Point(290, 76);
-            this.panel_YNear.Name = "panel_YNear";
-            this.panel_YNear.Size = new System.Drawing.Size(54, 29);
-            this.panel_YNear.TabIndex = 88;
-            // 
-            // panel_YAlarm
-            // 
-            this.panel_YAlarm.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YAlarm.Location = new System.Drawing.Point(128, 76);
-            this.panel_YAlarm.Name = "panel_YAlarm";
-            this.panel_YAlarm.Size = new System.Drawing.Size(54, 29);
-            this.panel_YAlarm.TabIndex = 82;
-            // 
-            // panel_YEncZ
-            // 
-            this.panel_YEncZ.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YEncZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YEncZ.Location = new System.Drawing.Point(344, 76);
-            this.panel_YEncZ.Name = "panel_YEncZ";
-            this.panel_YEncZ.Size = new System.Drawing.Size(54, 29);
-            this.panel_YEncZ.TabIndex = 90;
-            // 
-            // panel_YPlusLimit
-            // 
-            this.panel_YPlusLimit.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YPlusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YPlusLimit.Location = new System.Drawing.Point(182, 76);
-            this.panel_YPlusLimit.Name = "panel_YPlusLimit";
-            this.panel_YPlusLimit.Size = new System.Drawing.Size(54, 29);
-            this.panel_YPlusLimit.TabIndex = 84;
-            // 
-            // panel_YHomeDone
-            // 
-            this.panel_YHomeDone.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_YHomeDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_YHomeDone.Location = new System.Drawing.Point(74, 76);
-            this.panel_YHomeDone.Name = "panel_YHomeDone";
-            this.panel_YHomeDone.Size = new System.Drawing.Size(54, 29);
-            this.panel_YHomeDone.TabIndex = 80;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label19.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label19.Location = new System.Drawing.Point(398, 17);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 30);
-            this.label19.TabIndex = 76;
-            this.label19.Text = "Busy";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label21.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.Location = new System.Drawing.Point(344, 17);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(54, 30);
-            this.label21.TabIndex = 75;
-            this.label21.Text = "Enc(Z)";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label22.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label22.Location = new System.Drawing.Point(290, 17);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(54, 30);
-            this.label22.TabIndex = 74;
-            this.label22.Text = "Near";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label23.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label23.Location = new System.Drawing.Point(236, 17);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(54, 30);
-            this.label23.TabIndex = 73;
-            this.label23.Text = "- Limit";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label24.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label24.Location = new System.Drawing.Point(452, 17);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(68, 30);
-            this.label24.TabIndex = 72;
-            this.label24.Text = "Emergency";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label25.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label25.Location = new System.Drawing.Point(182, 17);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(54, 30);
-            this.label25.TabIndex = 71;
-            this.label25.Text = "+ Limit";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label26.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label26.Location = new System.Drawing.Point(128, 17);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(54, 30);
-            this.label26.TabIndex = 70;
-            this.label26.Text = "Alarm";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label27.Location = new System.Drawing.Point(74, 17);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(54, 30);
-            this.label27.TabIndex = 69;
-            this.label27.Text = "Home";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label16.Location = new System.Drawing.Point(13, 76);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 29);
-            this.label16.TabIndex = 68;
-            this.label16.Text = "Screw";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label18.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label18.Location = new System.Drawing.Point(13, 47);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(61, 29);
-            this.label18.TabIndex = 67;
-            this.label18.Text = "Piston";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_YStop
             // 
@@ -978,108 +803,314 @@ namespace DDF
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
-            // groupBox2
+            // comboBox_YServo
             // 
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label27);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.panel_XBusy);
-            this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.panel_XEncZ);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.panel_XNear);
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.panel_XMinusLimit);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.panel_XPlusLimit);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.panel_XAlarm);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.panel_XHomeDone);
-            this.groupBox2.Controls.Add(this.panel_YHomeDone);
-            this.groupBox2.Controls.Add(this.panel_YPlusLimit);
-            this.groupBox2.Controls.Add(this.panel_YEncZ);
-            this.groupBox2.Controls.Add(this.panel_YAlarm);
-            this.groupBox2.Controls.Add(this.panel_YNear);
-            this.groupBox2.Controls.Add(this.panel_YMinusLimit);
-            this.groupBox2.Controls.Add(this.panel_YBusy);
-            this.groupBox2.Controls.Add(this.panel_Emergency);
-            this.groupBox2.Location = new System.Drawing.Point(591, 331);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(532, 117);
-            this.groupBox2.TabIndex = 105;
-            this.groupBox2.TabStop = false;
+            this.comboBox_YServo.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.comboBox_YServo.FormattingEnabled = true;
+            this.comboBox_YServo.Items.AddRange(new object[] {
+            "OFF",
+            "ON"});
+            this.comboBox_YServo.Location = new System.Drawing.Point(216, 230);
+            this.comboBox_YServo.Name = "comboBox_YServo";
+            this.comboBox_YServo.Size = new System.Drawing.Size(105, 28);
+            this.comboBox_YServo.TabIndex = 142;
+            this.comboBox_YServo.Text = "OFF";
             // 
-            // button1
+            // label6
             // 
-            this.button1.Location = new System.Drawing.Point(216, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 29);
-            this.button1.TabIndex = 105;
-            this.button1.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Location = new System.Drawing.Point(25, 233);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 20);
+            this.label6.TabIndex = 150;
+            this.label6.Text = "Servo";
             // 
-            // label1
+            // comboBox_XServo
             // 
-            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(77, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 29);
-            this.label1.TabIndex = 106;
-            this.label1.Text = "Piston";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(216, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 29);
-            this.label2.TabIndex = 107;
-            this.label2.Text = "Screw";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(32, 179);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 17);
-            this.label3.TabIndex = 108;
-            this.label3.Text = "Cmd";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(34, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 17);
-            this.label4.TabIndex = 109;
-            this.label4.Text = "Enc";
+            this.comboBox_XServo.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.comboBox_XServo.FormattingEnabled = true;
+            this.comboBox_XServo.Items.AddRange(new object[] {
+            "OFF",
+            "ON"});
+            this.comboBox_XServo.Location = new System.Drawing.Point(77, 230);
+            this.comboBox_XServo.Name = "comboBox_XServo";
+            this.comboBox_XServo.Size = new System.Drawing.Size(105, 28);
+            this.comboBox_XServo.TabIndex = 149;
+            this.comboBox_XServo.Text = "OFF";
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(13, 17);
+            this.label5.Location = new System.Drawing.Point(12, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 30);
-            this.label5.TabIndex = 94;
+            this.label5.TabIndex = 176;
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label27.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label27.Location = new System.Drawing.Point(73, 278);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(54, 30);
+            this.label27.TabIndex = 153;
+            this.label27.Text = "Home";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label18.Location = new System.Drawing.Point(12, 308);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(61, 29);
+            this.label18.TabIndex = 151;
+            this.label18.Text = "Piston";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label16.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label16.Location = new System.Drawing.Point(12, 337);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 29);
+            this.label16.TabIndex = 152;
+            this.label16.Text = "Screw";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label26.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label26.Location = new System.Drawing.Point(127, 278);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(54, 30);
+            this.label26.TabIndex = 154;
+            this.label26.Text = "Alarm";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XBusy
+            // 
+            this.panel_XBusy.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XBusy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XBusy.Location = new System.Drawing.Point(397, 308);
+            this.panel_XBusy.Name = "panel_XBusy";
+            this.panel_XBusy.Size = new System.Drawing.Size(54, 29);
+            this.panel_XBusy.TabIndex = 167;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label25.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label25.Location = new System.Drawing.Point(181, 278);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(54, 30);
+            this.label25.TabIndex = 155;
+            this.label25.Text = "+ Limit";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XEncZ
+            // 
+            this.panel_XEncZ.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XEncZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XEncZ.Location = new System.Drawing.Point(343, 308);
+            this.panel_XEncZ.Name = "panel_XEncZ";
+            this.panel_XEncZ.Size = new System.Drawing.Size(54, 29);
+            this.panel_XEncZ.TabIndex = 166;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label24.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.Location = new System.Drawing.Point(451, 278);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(68, 30);
+            this.label24.TabIndex = 156;
+            this.label24.Text = "Emergency";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XNear
+            // 
+            this.panel_XNear.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XNear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XNear.Location = new System.Drawing.Point(289, 308);
+            this.panel_XNear.Name = "panel_XNear";
+            this.panel_XNear.Size = new System.Drawing.Size(54, 29);
+            this.panel_XNear.TabIndex = 165;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label23.Location = new System.Drawing.Point(235, 278);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(54, 30);
+            this.label23.TabIndex = 157;
+            this.label23.Text = "- Limit";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XMinusLimit
+            // 
+            this.panel_XMinusLimit.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XMinusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XMinusLimit.Location = new System.Drawing.Point(235, 308);
+            this.panel_XMinusLimit.Name = "panel_XMinusLimit";
+            this.panel_XMinusLimit.Size = new System.Drawing.Size(54, 29);
+            this.panel_XMinusLimit.TabIndex = 164;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label22.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label22.Location = new System.Drawing.Point(289, 278);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(54, 30);
+            this.label22.TabIndex = 158;
+            this.label22.Text = "Near";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XPlusLimit
+            // 
+            this.panel_XPlusLimit.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XPlusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XPlusLimit.Location = new System.Drawing.Point(181, 308);
+            this.panel_XPlusLimit.Name = "panel_XPlusLimit";
+            this.panel_XPlusLimit.Size = new System.Drawing.Size(54, 29);
+            this.panel_XPlusLimit.TabIndex = 163;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label21.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.Location = new System.Drawing.Point(343, 278);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(54, 30);
+            this.label21.TabIndex = 159;
+            this.label21.Text = "Enc(Z)";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XAlarm
+            // 
+            this.panel_XAlarm.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XAlarm.Location = new System.Drawing.Point(127, 308);
+            this.panel_XAlarm.Name = "panel_XAlarm";
+            this.panel_XAlarm.Size = new System.Drawing.Size(54, 29);
+            this.panel_XAlarm.TabIndex = 162;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label19.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label19.Location = new System.Drawing.Point(397, 278);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(54, 30);
+            this.label19.TabIndex = 160;
+            this.label19.Text = "Busy";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_XHomeDone
+            // 
+            this.panel_XHomeDone.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_XHomeDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_XHomeDone.Location = new System.Drawing.Point(73, 308);
+            this.panel_XHomeDone.Name = "panel_XHomeDone";
+            this.panel_XHomeDone.Size = new System.Drawing.Size(54, 29);
+            this.panel_XHomeDone.TabIndex = 161;
+            // 
+            // panel_YHomeDone
+            // 
+            this.panel_YHomeDone.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YHomeDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YHomeDone.Location = new System.Drawing.Point(73, 337);
+            this.panel_YHomeDone.Name = "panel_YHomeDone";
+            this.panel_YHomeDone.Size = new System.Drawing.Size(54, 29);
+            this.panel_YHomeDone.TabIndex = 168;
+            // 
+            // panel_YPlusLimit
+            // 
+            this.panel_YPlusLimit.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YPlusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YPlusLimit.Location = new System.Drawing.Point(181, 337);
+            this.panel_YPlusLimit.Name = "panel_YPlusLimit";
+            this.panel_YPlusLimit.Size = new System.Drawing.Size(54, 29);
+            this.panel_YPlusLimit.TabIndex = 170;
+            // 
+            // panel_YEncZ
+            // 
+            this.panel_YEncZ.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YEncZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YEncZ.Location = new System.Drawing.Point(343, 337);
+            this.panel_YEncZ.Name = "panel_YEncZ";
+            this.panel_YEncZ.Size = new System.Drawing.Size(54, 29);
+            this.panel_YEncZ.TabIndex = 173;
+            // 
+            // panel_YAlarm
+            // 
+            this.panel_YAlarm.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YAlarm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YAlarm.Location = new System.Drawing.Point(127, 337);
+            this.panel_YAlarm.Name = "panel_YAlarm";
+            this.panel_YAlarm.Size = new System.Drawing.Size(54, 29);
+            this.panel_YAlarm.TabIndex = 169;
+            // 
+            // panel_YNear
+            // 
+            this.panel_YNear.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YNear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YNear.Location = new System.Drawing.Point(289, 337);
+            this.panel_YNear.Name = "panel_YNear";
+            this.panel_YNear.Size = new System.Drawing.Size(54, 29);
+            this.panel_YNear.TabIndex = 172;
+            // 
+            // panel_YMinusLimit
+            // 
+            this.panel_YMinusLimit.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YMinusLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YMinusLimit.Location = new System.Drawing.Point(235, 337);
+            this.panel_YMinusLimit.Name = "panel_YMinusLimit";
+            this.panel_YMinusLimit.Size = new System.Drawing.Size(54, 29);
+            this.panel_YMinusLimit.TabIndex = 171;
+            // 
+            // panel_YBusy
+            // 
+            this.panel_YBusy.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_YBusy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_YBusy.Location = new System.Drawing.Point(397, 337);
+            this.panel_YBusy.Name = "panel_YBusy";
+            this.panel_YBusy.Size = new System.Drawing.Size(54, 29);
+            this.panel_YBusy.TabIndex = 174;
+            // 
+            // panel_Emergency
+            // 
+            this.panel_Emergency.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_Emergency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_Emergency.Location = new System.Drawing.Point(451, 308);
+            this.panel_Emergency.Name = "panel_Emergency";
+            this.panel_Emergency.Size = new System.Drawing.Size(68, 58);
+            this.panel_Emergency.TabIndex = 175;
             // 
             // DDF_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(1151, 516);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1151, 522);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -1097,7 +1128,6 @@ namespace DDF
             this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1113,31 +1143,6 @@ namespace DDF
         private System.Windows.Forms.Button button_XJogRight;
         private System.Windows.Forms.Button button_XJogLeft;
         private System.Windows.Forms.CheckBox checkBox_JogCount;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Panel panel_YHomeDone;
-        private System.Windows.Forms.Panel panel_XHomeDone;
-        private System.Windows.Forms.Panel panel_YMinusLimit;
-        private System.Windows.Forms.Panel panel_XMinusLimit;
-        private System.Windows.Forms.Panel panel_YAlarm;
-        private System.Windows.Forms.Panel panel_YPlusLimit;
-        private System.Windows.Forms.Panel panel_XAlarm;
-        private System.Windows.Forms.Panel panel_XPlusLimit;
-        private System.Windows.Forms.Panel panel_YBusy;
-        private System.Windows.Forms.Panel panel_XBusy;
-        private System.Windows.Forms.Panel panel_YNear;
-        private System.Windows.Forms.Panel panel_YEncZ;
-        private System.Windows.Forms.Panel panel_XNear;
-        private System.Windows.Forms.Panel panel_XEncZ;
-        private System.Windows.Forms.Panel panel_Emergency;
         private System.Windows.Forms.Button button_YJogRight;
         private System.Windows.Forms.Button button_YJogLeft;
         private System.Windows.Forms.Button button_Open;
@@ -1186,10 +1191,37 @@ namespace DDF
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox_YServo;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Panel panel_XBusy;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Panel panel_XEncZ;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel_XNear;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel_XMinusLimit;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Panel panel_XPlusLimit;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel panel_XAlarm;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Panel panel_XHomeDone;
+        private System.Windows.Forms.Panel panel_YHomeDone;
+        private System.Windows.Forms.Panel panel_YPlusLimit;
+        private System.Windows.Forms.Panel panel_YEncZ;
+        private System.Windows.Forms.Panel panel_YAlarm;
+        private System.Windows.Forms.Panel panel_YNear;
+        private System.Windows.Forms.Panel panel_YMinusLimit;
+        private System.Windows.Forms.Panel panel_YBusy;
+        private System.Windows.Forms.Panel panel_Emergency;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox_XServo;
     }
 }
 

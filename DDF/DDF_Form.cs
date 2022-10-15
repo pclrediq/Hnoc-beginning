@@ -20,7 +20,7 @@ namespace DDF // 전체가 여기 안에 다 있음
                                 ,"NMC2_220_DIO32"
                                 ,"NMC2_220_DIO64"
                                 ,"NMC2_420_DIO32"
-                                ,"NMC2_420_DIO64"               
+                                ,"NMC2_420_DIO64"
                                 ,"NMC2_820_DIO32"
                                 ,"NMC2_820_DIO64"
                                 ,"NMC2_DIO32"
@@ -84,7 +84,7 @@ namespace DDF // 전체가 여기 안에 다 있음
                     System.Threading.Thread.Sleep(2000);
                     Console.WriteLine(TdTempControl.ThreadState);
                     this.Invoke(new delegateUpdateTmpCtrl(updateTempCtrl));
-                    
+
                 }
             }
             catch (ThreadInterruptedException e) { e.ToString(); Console.WriteLine("catch"); }
@@ -139,7 +139,7 @@ namespace DDF // 전체가 여기 안에 다 있음
             ///////////////////////////////////////////
             //              Ch1 목표 온도
             ///////////////////////////////////////////
-            
+
             Sendbuff[0] = 0x01;
             Sendbuff[1] = 0x03;
             Sendbuff[2] = 0x00;
@@ -441,7 +441,7 @@ namespace DDF // 전체가 여기 안에 다 있음
             ///////////////////////////////////////////
             //               채널 1 처리
             ///////////////////////////////////////////
-            
+
             if (flag_ch1_set == true)       // flag 값이 초기값(false)에서 목표값을 설정(클릭)한 뒤 true가 되었을때
             {
                 ch1_goal_value = int.Parse(textBox_Ch1_Goal.Text);
@@ -715,7 +715,7 @@ namespace DDF // 전체가 여기 안에 다 있음
         {
             PaixMotion.Stop(nAxis);
         }
- 
+
         private void initialize(object sender, EventArgs e) // 모션 컨트롤 조작 변수 초기화
         {
             //x축
@@ -729,8 +729,13 @@ namespace DDF // 전체가 여기 안에 다 있음
             PaixMotion.ServoOn(1, 1);
             PaixMotion.SetSpeedPPS(1, 1, 10.445, 10.445, 16.667);
             PaixMotion.SetHomeSpeed(1, 16.667, 6.222, -4.223);
+            
         }
-
+        private void Servo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PaixMotion.ServoOn(0, comboBox_XServo.SelectedIndex);
+            PaixMotion.ServoOn(1, comboBox_YServo.SelectedIndex);
+        }
         private void btn_motioncontrol_Click(object sender, EventArgs e) // 모션 컨트롤 폼 팝업
         {
             MotionControl motioncontrol = new MotionControl(this);
